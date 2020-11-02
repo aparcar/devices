@@ -4,6 +4,32 @@ title: Target
 description: OpenWrt Target
 type: string
 enum:
+  - ar71xx/generic
+  - ar71xx/tiny
+  - orion/generic
+  - brcm63xx/generic
+  - brcm47xx/legacy
+  - brcm63xx/smp
+  - ar71xx/mikrotik
+  - avr32/generic
+  - brcm47xx/generic
+  - ramips/mt7688
+  - ixp4xx/generic
+  - adm5120/generic
+  - ar71xx/nand
+  - rb532/generic
+  - brcm47xx/mips74k
+  - ar7/generic
+  - at91/generic
+  - ramips/mt7628
+  - ramips/generic
+  - rockchip/rk3399
+  - gemini/wiligear
+  - au1000/au1500
+  - cns21xx/generic
+  - mpc85xx/generic
+  - at91/sama5d3
+
   - apm821xx/nand
   - apm821xx/sata
   - arc770/generic
