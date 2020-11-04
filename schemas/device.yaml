@@ -157,7 +157,8 @@ properties:
     $id: '#/properties/supported_since_commit'
     title: Supported Since Git Commit
     type: string
-    minLength: 2
+    pattern: "^[a-zA-Z0-9]+$"
+    minLength: 6
     maxLength: 40
 
   variant:
