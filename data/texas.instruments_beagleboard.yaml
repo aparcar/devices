@@ -1,6 +1,5 @@
 audio_ports:
-- Line
-- out
+- type: Line-Out
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -22,5 +21,5 @@ target:
 variant: ''
 vendor: Texas Instruments
 video_ports:
-- DVI-D
+- type: DVI-D
 wifi: []

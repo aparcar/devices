@@ -1,5 +1,5 @@
 audio_ports:
-- Microphone
+- type: Microphone
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -24,7 +24,7 @@ target:
 variant: ''
 vendor: Wansview
 video_ports:
-- Camera
+- type: Camera
 wifi:
 - driver: unknown
   freq_ghz: 2.4

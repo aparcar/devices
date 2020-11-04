@@ -1,5 +1,5 @@
 audio_ports:
-- S/PDIF
+- type: S/PDIF
 auto_converted: true
 bluetooth: '4.0'
 bootloader: U-Boot
@@ -25,7 +25,7 @@ target:
 variant: ''
 vendor: Cubitech
 video_ports:
-- HDMI
+- type: HDMI
 wifi:
 - driver: brcmfmac
   freq_ghz: 2.4

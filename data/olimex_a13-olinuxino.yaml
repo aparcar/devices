@@ -1,5 +1,5 @@
 audio_ports:
-- Microphone
+- type: Microphone
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -21,7 +21,7 @@ target:
 variant: ''
 vendor: Olimex
 video_ports:
-- VGA
+- type: VGA
 wifi:
 - driver: unknown
   freq_ghz: 2.4

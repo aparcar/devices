@@ -1,6 +1,5 @@
 audio_ports:
-- Headphone
-- jack
+- type: Headphone
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -26,7 +25,7 @@ target:
 variant: ''
 vendor: Xunlong
 video_ports:
-- HDMI
+- type: HDMI
 wifi:
 - driver: unknown
   freq_ghz: 2.4

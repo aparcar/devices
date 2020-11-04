@@ -1,6 +1,5 @@
 audio_ports:
-- Headphone
-- jack
+- type: Headphone
 auto_converted: true
 bootloader: U-Boot
 cpu:

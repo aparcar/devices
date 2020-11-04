@@ -1,6 +1,5 @@
 audio_ports:
-- Line
-- out
+  - type: Line-Out
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -24,6 +23,6 @@ target:
 variant: ''
 vendor: Pine64
 video_ports:
-- MIPI
-- DSI
+- type: MIPI
+- type: DSI
 wifi: []

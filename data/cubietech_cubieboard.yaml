@@ -1,6 +1,5 @@
 audio_ports:
-- Headphone
-- jack
+- type: Headphone
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -23,5 +22,5 @@ target:
 variant: ''
 vendor: Cubitech
 video_ports:
-- HDMI
+- type: HDMI
 wifi: []

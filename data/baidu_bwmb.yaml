@@ -1,5 +1,5 @@
 audio_ports:
-- Line
+- type: Line
 auto_converted: true
 cpu:
   cores: 1

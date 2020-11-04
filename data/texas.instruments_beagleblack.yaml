@@ -1,5 +1,5 @@
 audio_ports:
-- HDMI
+- type: HDMI
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -22,5 +22,5 @@ target:
 variant: ''
 vendor: Texas Instruments
 video_ports:
-- HDMI
+- type: HDMI
 wifi: []

@@ -1,5 +1,5 @@
 audio_ports:
-- other
+- type: other
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -24,7 +24,7 @@ target:
 variant: ''
 vendor: Xunlong
 video_ports:
-- other
+- type: other
 wifi:
 - driver: other
   freq_ghz: 2.4

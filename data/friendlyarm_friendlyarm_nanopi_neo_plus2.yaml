@@ -1,5 +1,5 @@
 audio_ports:
-- other
+- type: other
 auto_converted: true
 bluetooth: '4.0'
 bootloader: U-Boot
@@ -25,7 +25,7 @@ target:
 variant: ''
 vendor: FriendlyARM
 video_ports:
-- other
+- type: other
 wifi:
 - driver: unknown
   freq_ghz: 2.4

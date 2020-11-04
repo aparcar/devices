@@ -1,5 +1,5 @@
 audio_ports:
-- I2S
+- type: I2S
 auto_converted: true
 bluetooth: '4.1'
 bootloader: U-Boot
@@ -24,8 +24,8 @@ target:
 variant: ''
 vendor: Sinovoip
 video_ports:
-- MIPI
-- DSI
+- type: MIPI
+- type: DSI
 wifi:
 - driver: unknown
   freq_ghz: 2.4

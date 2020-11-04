@@ -1,5 +1,5 @@
 audio_ports:
-- S/PDIF
+- type: S/PDIF
 auto_converted: true
 bootloader: U-Boot
 cpu:
@@ -23,5 +23,5 @@ target:
 variant: '2.1'
 vendor: Pine64
 video_ports:
-- HDMI
+- type: HDMI
 wifi: []

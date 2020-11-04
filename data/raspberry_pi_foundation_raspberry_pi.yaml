@@ -1,6 +1,5 @@
 audio_ports:
-- Headphone
-- jack
+- type: Headphone
 auto_converted: true
 cpu:
   cores: 4
@@ -23,5 +22,5 @@ target:
 variant: B 1.2
 vendor: Raspberry Pi Foundation
 video_ports:
-- HDMI
+- type: HDMI
 wifi: []

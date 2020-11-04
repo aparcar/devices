@@ -1,5 +1,5 @@
 audio_ports:
-- HDMI
+- type: HDMI
 auto_converted: true
 bluetooth: '4.0'
 bootloader: U-Boot
@@ -26,7 +26,7 @@ target:
 variant: M2PLUS-H3
 vendor: Sinovoip
 video_ports:
-- HDMI
+- type: HDMI
 wifi:
 - driver: brcmfmac
   freq_ghz: 2.4

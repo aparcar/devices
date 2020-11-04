@@ -1,5 +1,5 @@
 audio_ports:
-- other
+- type: other
 auto_converted: true
 bootloader: JBoot
 cpu:
