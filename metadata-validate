@@ -14,7 +14,7 @@ def validate_file(instance_file):
             schema={"$ref": "file:device.yaml"},
             resolver=RefResolver("", {}, store=store),
         )
-        print(f"Valid metadata: {instance_path}")
+        print(f"Valid metadata: {instance_file}")
 
     except ValidationError as e:
         print(e)
@@ -45,5 +45,4 @@ for schema in schema_path.glob("*.yaml"):
     store[f"file:{schema.name}"] = yaml.safe_load(schema.read_text())
 
 for instance_file in instance_files:
-    print(instance_file)
     validate_file(instance_file)
