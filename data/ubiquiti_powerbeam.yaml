@@ -1,0 +1,29 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 560
+  model: Atheros AR9344
+device_type: other
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: PowerBeam M2-400
+serial: none
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- ar71xx/generic
+variant: ''
+vendor: Ubiquiti
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n

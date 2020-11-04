@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq PSB 50800
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: P-2601HN-Fx
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 3b33adeb9987b52264e56d006784da497eda16f2
+target:
+- lantiq/xway
+variant: ''
+vendor: ZyXEL
+wifi:
+- driver: rt2800usb
+  freq_ghz: 2.4
+  hardware: Ralink RT3070L
+  protocol:
+  - b
+  - g
+  - n

@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 750
+  model: PLX NAS7820
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: MD86587
+sata_ports: 1
+serial: unknown_params
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: 72b58f2eb12ad4aa0c59481d0911dc5e39180eb5
+target:
+- oxnas/ox820
+variant: v1
+vendor: Medion
+wifi: []

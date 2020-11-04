@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1200
+  model: Marvell 88F6281
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: DockStar
+serial: 115200/8N1
+storage:
+- size_mb: 512
+  type: NAND
+supported_since_commit: 0e974c50edac8e4e5607e9eb1fcf68e1e822c3be
+target:
+- kirkwood/generic
+variant: ''
+vendor: Seagate
+wifi: []

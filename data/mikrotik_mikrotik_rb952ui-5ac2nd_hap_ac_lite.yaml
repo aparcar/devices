@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 1
+  mhz: 650
+  model: Qualcomm Atheros QCA9531
+device_type: WiFi AP
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: RB952Ui-5ac2nD (hAP ac lite)
+serial: none
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 540edf704501db3ec8dcb278a7f1df52de222ae0
+target:
+- ar71xx/mikrotik
+variant: ''
+vendor: MikroTik
+wifi:
+- driver: ath10k
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9887
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9887
+  protocol:
+  - a
+  - n
+  - ac

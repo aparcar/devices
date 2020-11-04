@@ -1,0 +1,32 @@
+auto_converted: true
+bootloader: other
+cpu:
+  cores: 1
+  mhz: 300
+  model: Storm SL3516
+detachable_antennas: 2
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: Square One SQ201
+sata_ports: 1
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 1c1e2542445040b62a13862e42f961ac9c7e54f5
+target:
+- gemini/generic
+variant: ''
+vendor: ITian
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT2561T (mini-PCI)
+  protocol:
+  - b
+  - g

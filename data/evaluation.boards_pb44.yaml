@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 680
+  model: Atheros AR7161
+device_type: Single Board Computer
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 64
+model: Atheros PB44
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: ac4b63a18bf6f3a384be304c338b7935b98e62cd
+target:
+- ar71xx/generic
+variant: ''
+vendor: Evaluation boards / unbranded boards
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: 2x mini-PCI
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: 2x mini-PCI
+  protocol:
+  - a
+  - n

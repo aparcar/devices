@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1200
+  model: Marvell 88F6281
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 256
+model: Pogoplug V2
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: unknown
+supported_since_commit: 2b0fa00da8fc26e34f08680670f4637766bbd3e8
+target:
+- kirkwood/generic
+variant: POGO-E02
+vendor: Pogoplug
+wifi: []

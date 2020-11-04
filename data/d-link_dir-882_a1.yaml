@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621AT
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: DIR-882
+serial: 57600/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 73e8f23579bcb87764dae9ed0aefe28be3183d3e
+target:
+- ramips/mt7621
+variant: A1
+vendor: D-Link
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7615N
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7615N
+  protocol:
+  - a
+  - n
+  - ac

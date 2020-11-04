@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq XWAY Danube
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: ARV4519PW
+serial: none
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: 0dd64c552d56d1d85e74a4adb54795eae7df0dcd
+target:
+- lantiq/xway
+variant: ''
+vendor: Arcadyan / Astoria
+wifi: []

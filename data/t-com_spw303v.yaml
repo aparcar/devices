@@ -1,0 +1,35 @@
+auto_converted: true
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq Danube
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: Speedport W 303V Typ A
+serial: none
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- lantiq/xway
+variant: ''
+vendor: T-Com / Telekom
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT2860T
+  protocol:
+  - b
+  - g
+  - n
+- driver: rt2800pci
+  freq_ghz: 5.0
+  hardware: Ralink RT2860T
+  protocol:
+  - a
+  - n

@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 1000
+  model: Cavium CN7020 AAP 1.2
+device_type: Router
+ethernet:
+- port_count: 3
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 1024
+model: Shield
+serial: 115200/8N1
+storage:
+- type: SDHC
+supported_since_commit: eadb1a943744997a8685c6de97a25d60d258af85
+target:
+- octeon/generic
+variant: ''
+vendor: Itus Networks
+wifi: []

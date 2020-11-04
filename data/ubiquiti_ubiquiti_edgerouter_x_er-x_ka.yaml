@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621AT
+device_type: Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 256
+model: EdgeRouter X-SFP (ER-X-SFP)
+serial: 57600/8N1
+storage:
+- size_mb: 256
+  type: NAND
+supported_since_commit: 9715beb04c74a918697945b3e2d23a139bd04b70
+target:
+- ramips/mt7621
+variant: ''
+vendor: Ubiquiti
+wifi: []

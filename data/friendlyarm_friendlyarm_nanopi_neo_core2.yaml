@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 4
+  mhz: 1500
+  model: Allwinner H5
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 1024
+model: NanoPi NEO Core2
+serial: 115200/8N1
+storage:
+- type: microSD
+supported_since_commit: 3c24a1d423a6052b101c00cb7d94e70d72702639
+target:
+- sunxi/cortexa53
+variant: ''
+vendor: FriendlyARM
+wifi: []

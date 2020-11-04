@@ -1,0 +1,40 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 720
+  model: Qualcomm Atheros QCA9558
+detachable_antennas: 3
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: Archer C7 AC1750
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 1bce5e83284a9fb8c5c9eb3f53bf1335a3f52744
+target:
+- ar71xx/generic
+- ath79/generic
+variant: v3
+vendor: TP-Link
+wifi:
+- driver: ath10k
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9880-BR4A
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9880-BR4A
+  protocol:
+  - a
+  - n
+  - ac

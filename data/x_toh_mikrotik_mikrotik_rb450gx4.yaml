@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 4
+  mhz: 716
+  model: Qualcomm IPQ4019
+device_type: Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 1024
+model: RB450Gx4
+serial: 115200/8N1
+storage:
+- size_mb: 512
+  type: NAND
+target:
+- ipq40xx/generic
+variant: ''
+vendor: MikroTik
+wifi: []

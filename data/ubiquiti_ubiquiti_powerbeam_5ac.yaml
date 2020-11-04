@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 720
+  model: Qualcomm Atheros QCA9558
+device_type: WiFi AP
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: PowerBeam 5AC
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: a0ef42e77c367312df7edc78dbd0d18a3faf9808
+target:
+- ath79/generic
+variant: '500'
+vendor: Ubiquiti
+wifi:
+- driver: ath10k-ct-smallbuffers
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA988X
+  protocol:
+  - a
+  - n
+  - ac

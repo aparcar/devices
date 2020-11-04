@@ -1,0 +1,40 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621AT
+detachable_antennas: 4
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 512
+model: WG3526
+sata_ports: 1
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 30fbc1a4d146ae0060d02946709fd6d8cc2a2b56
+target:
+- ramips/mt7621
+variant: 16M
+vendor: ZBT
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7612E
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7612E
+  protocol:
+  - a
+  - n
+  - ac

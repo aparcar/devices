@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7620A
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: EW-7478APC
+serial: 57600/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: ab7f8146fdebe8e67a9154993154fdfe20ef51df
+target:
+- ramips/mt7620
+variant: ''
+vendor: Edimax
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7620A
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7620A
+  protocol:
+  - a
+  - n
+  - ac

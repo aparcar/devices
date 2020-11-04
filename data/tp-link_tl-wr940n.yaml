@@ -1,0 +1,32 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 750
+  model: Qualcomm Atheros TP9343
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: TL-WR940N
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: b834487203996e71c5ea25f83488873483b96522
+target:
+- ar71xx/tiny
+- ath79/tiny
+variant: v6
+vendor: TP-Link
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros TP9343
+  protocol:
+  - b
+  - g
+  - n

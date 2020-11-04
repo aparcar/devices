@@ -1,0 +1,35 @@
+auto_converted: true
+cpu:
+  cores: 2
+  mhz: 1200
+  model: Freescale P2020
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 2048
+model: Turris
+serial: unknown_params
+storage:
+- size_mb: 256
+  type: NAND
+target:
+- mpc85xx/generic
+variant: v1.1
+vendor: Turris CZ.NIC
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: 2x mini-PCIe
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: 2x mini-PCIe
+  protocol:
+  - a
+  - n

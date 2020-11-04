@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 384
+  model: Ralink RT3052F
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: ASL-26555
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 7bfab6e308a54d4fc2b99d9f80b4a4cd735de5b1
+target:
+- ramips/rt305x
+variant: ''
+vendor: Alpha Networks
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT3052F
+  protocol:
+  - b
+  - g
+  - n

@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 400
+  model: Atheros AR9132 rev 2
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: WZR-HP-G300NH
+serial: 115200/8N1
+storage:
+- size_mb: 32
+  type: unknown
+supported_since_commit: 001ebd8d90028c583b1e3b2ef40e3a168c6e7b6a
+target:
+- ar71xx/generic
+variant: v1
+vendor: Buffalo
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9103
+  protocol:
+  - b
+  - g
+  - n

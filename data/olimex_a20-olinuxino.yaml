@@ -1,0 +1,29 @@
+audio_ports:
+- Line
+- out
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 1000
+  model: Allwinner A20
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 1024
+model: A20-OLinuXino-MICRO
+sata_ports: 1
+serial: 115200/8N1
+storage:
+- type: SD
+supported_since_commit: 2bc70cfbace7d696ae37215e7895d4572d2b3f4d
+target:
+- sunxi/cortexa7
+variant: ''
+vendor: Olimex
+video_ports:
+- VGA
+wifi: []

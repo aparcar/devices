@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq XWAY Danube
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: Mediapack MP-252
+serial: unknown_params
+storage:
+- size_mb: 32
+  type: unknown
+supported_since_commit: 28fcb00b4473b6505f9b39a0c04e75d42fe9f40c
+target:
+- lantiq/xway
+variant: ''
+vendor: AudioCodes
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT3062F
+  protocol:
+  - b
+  - g
+  - n

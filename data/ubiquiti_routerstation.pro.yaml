@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 680
+  model: Atheros AR7161
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: RouterStation Pro
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 1fe8e242f2b3b19449148165309d48b732021e10
+target:
+- ar71xx/generic
+- ath79/generic
+variant: ''
+vendor: Ubiquiti
+wifi: []

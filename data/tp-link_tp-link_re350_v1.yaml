@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621A
+device_type: Range Extender
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: RE350
+serial: 57600/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: f683385e73f09c13fd08c3d352f3f1739c1944c4
+target:
+- ramips/mt7621
+variant: v1
+vendor: TP-Link
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7612E
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7612E
+  protocol:
+  - a
+  - n
+  - ac

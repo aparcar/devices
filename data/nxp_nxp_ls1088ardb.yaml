@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 8
+  mhz: 1800
+  model: NXP LS1088A
+device_type: Single Board Computer
+ethernet:
+- port_count: 8
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 8192
+model: LS1088ARDB
+sata_ports: 1
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: unknown
+supported_since_commit: 1866368a8ab8cacf73aa47f67138040d5620439d
+target:
+- layerscape/armv8_64b
+variant: ''
+vendor: NXP
+wifi: []

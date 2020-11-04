@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 400
+  model: ARM9
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: Netus G20
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 4bb7ab3057cc4d19924034f92a0a22decba04796
+target:
+- at91/generic
+variant: ''
+vendor: AcmeSystems
+wifi: []

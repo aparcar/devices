@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 300
+  model: Broadcom BCM6358
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: Home Hub 2
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 2d3371cd0fa1bd3631633ad9c2ddd1d232d8397f
+target:
+- brcm63xx/generic
+variant: Type A
+vendor: BT
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4322 (mini-PCI or onboard)
+  protocol:
+  - b
+  - g
+  - n

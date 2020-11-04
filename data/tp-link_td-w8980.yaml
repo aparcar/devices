@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 500
+  model: Lantiq XWAY VRX268
+detachable_antennas: 3
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 64
+model: TD-W8980
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 161179f40bd7899516518f3844fea28c6dd86efc
+target:
+- lantiq/xrx200
+variant: v1
+vendor: TP-Link
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Lantiq XWAY WAVE300
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath9k
+  freq_ghz: 5.0
+  hardware: Lantiq XWAY WAVE300
+  protocol:
+  - a
+  - n

@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621A
+device_type: Router
+ethernet:
+- port_count: 3
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 256
+model: RBM33G
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 5684d087418d176cfdef4e045e1950ca7ba3b09f
+target:
+- ramips/mt7621
+variant: ''
+vendor: MikroTik
+wifi: []

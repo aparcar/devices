@@ -1,0 +1,27 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 180
+  model: Atheros AR2313A
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet: []
+jtag: true
+memory_mb:
+- 16
+model: DWL-2100AP
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- ath25/generic
+variant: A3
+vendor: D-Link
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Atheros AR2112A
+  protocol:
+  - b
+  - g

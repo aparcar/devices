@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 480
+  model: Broadcom BCM4718
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: WNDR4000
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 05623aebefb8c55d40e3c6795b40ca046a8e6181
+target:
+- bcm47xx/mips74k
+variant: ''
+vendor: Netgear
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4718
+  protocol:
+  - b
+  - g
+  - n
+- driver: b43
+  freq_ghz: 5.0
+  hardware: Broadcom BCM4718
+  protocol:
+  - a
+  - n

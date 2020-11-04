@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 750
+  model: Qualcomm Atheros QCA956X
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 128
+model: TL-WDR6500
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: af60c367b7a16d80dba422b00fde2611a7c7d2ca
+target:
+- ar71xx/generic
+variant: v2
+vendor: TP-Link
+wifi:
+- driver: ath10k
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9882
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9882
+  protocol:
+  - a
+  - n
+  - ac

@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 500
+  model: Marvell 88F5181L
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 32
+model: WRT350N v2
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- orion/generic
+variant: '2.1'
+vendor: Linksys
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR5416 (mini-PCI)
+  protocol:
+  - b
+  - g
+  - n

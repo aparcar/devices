@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 256
+  model: Broadcom BCM6348
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 16
+model: AR 1004g
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: ce655b93cdd7b95dbe49056ed32a3f39d6c10506
+target:
+- brcm63xx/generic
+variant: '1'
+vendor: Asmax
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318
+  protocol:
+  - b
+  - g

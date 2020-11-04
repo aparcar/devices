@@ -1,0 +1,35 @@
+auto_converted: true
+cpu:
+  cores: 2
+  mhz: 500
+  model: Lantiq XWAY VRX288
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: Speedport W921V
+serial: unknown_params
+storage:
+- size_mb: 32
+  type: unknown
+target:
+- lantiq/xrx200
+variant: ''
+vendor: T-Com / Telekom
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: ''
+  protocol:
+  - a
+  - n

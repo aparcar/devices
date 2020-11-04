@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: Breed
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7628AN
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 128
+model: U7628-01
+serial: 57600/8N1
+storage:
+- type: microSD
+supported_since_commit: fa36bea470b3f1f26da4af80ac1e0f0b667a3466
+target:
+- ramips/mt76x8
+variant: ''
+vendor: UniElec
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7628AN
+  protocol:
+  - b
+  - g
+  - n

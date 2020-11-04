@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 560
+  model: Atheros AR9344
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: TL-WDR3320
+serial: none
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: 0dbced8a484faeb8bea0c29a35c1b0f6d58dbf4c
+target:
+- ar71xx/generic
+variant: v2
+vendor: TP-Link
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9344
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath9k
+  freq_ghz: 5.0
+  hardware: Atheros AR9344
+  protocol:
+  - a
+  - n

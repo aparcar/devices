@@ -1,0 +1,35 @@
+audio_ports:
+- other
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 4
+  mhz: 1200
+  model: Allwinner H2+
+detachable_antennas: 1
+device_type: Single Board Computer
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 256
+model: Orange Pi R1
+serial: 115200/8N1
+storage:
+- type: microSD
+supported_since_commit: 5508510e744ce9dfaba23cb8639977f021bd29f9
+target:
+- sunxi/cortexa7
+variant: ''
+vendor: Xunlong
+video_ports:
+- other
+wifi:
+- driver: other
+  freq_ghz: 2.4
+  hardware: Realtek RTL8189ETV
+  protocol:
+  - b
+  - g
+  - n

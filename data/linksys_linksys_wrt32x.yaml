@@ -1,0 +1,40 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 1866
+  model: Marvell Armada 385 88F6820
+detachable_antennas: 4
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 512
+model: WRT32X
+sata_ports: 1
+serial: 115200/8N1
+storage:
+- size_mb: 256
+  type: NAND
+supported_since_commit: bfbdeeb3de3da31f7e5f9bd429e079c2d839644a
+target:
+- mvebu/cortexa9
+variant: v1 (venom)
+vendor: Linksys
+wifi:
+- driver: mwlwifi
+  freq_ghz: 2.4
+  hardware: Marvell 88W8964
+  protocol:
+  - b
+  - g
+  - n
+- driver: mwlwifi
+  freq_ghz: 5.0
+  hardware: Marvell 88W8964
+  protocol:
+  - a
+  - n
+  - ac

@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1600
+  model: Marvell 88F6282
+device_type: Router
+ethernet:
+- port_count: 2
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 512
+model: ON100-K9
+serial: 115200/8N1
+storage:
+- size_mb: 512
+  type: NAND
+supported_since_commit: ca27b3d370353ff57719718a1964c6b4f10b11a4
+target:
+- kirkwood/generic
+variant: V01
+vendor: Cisco
+wifi: []

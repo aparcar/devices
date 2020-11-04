@@ -1,0 +1,33 @@
+auto_converted: true
+bootloader: Adam2
+cpu:
+  cores: 2
+  mhz: 500
+  model: Lantiq XWAY VRX288
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+- port_count: 2
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: FRITZ!Box 7360
+serial: 115200/8N1
+storage:
+- size_mb: 32
+  type: unknown
+supported_since_commit: 78bebe680f67e8967c2baad8a5c07035d431f9d5
+target:
+- lantiq/xrx200
+variant: v2
+vendor: AVM
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9287-BL1A
+  protocol:
+  - b
+  - g
+  - n

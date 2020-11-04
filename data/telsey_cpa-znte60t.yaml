@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 300
+  model: Broadcom BCM6358
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: CPA-ZNTE60T
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 049e59a27be91dc9731f53b4868795adde682fd4
+target:
+- brcm63xx/generic
+variant: ''
+vendor: Telsey
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT2661T
+  protocol:
+  - b
+  - g

@@ -1,0 +1,40 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 1400
+  model: Qualcomm Atheros IPQ8064
+detachable_antennas: 4
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 256
+model: R7500
+sata_ports: 1
+serial: unknown_params
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: 8b4df1efd58c692168b8ea7e664bed4dc3fd600b
+target:
+- ipq806x/generic
+variant: v1
+vendor: Netgear
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Quantenna QT3840BC + QT2518B
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: Quantenna QT3840BC + QT2518B
+  protocol:
+  - a
+  - n
+  - ac

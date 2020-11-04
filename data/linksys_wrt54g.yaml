@@ -1,0 +1,29 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 200
+  model: Broadcom BCM5352E
+detachable_antennas: 2
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: WRT54GS
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- bcm47xx/legacy
+variant: v3.0
+vendor: Linksys
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM5352E
+  protocol:
+  - b
+  - g

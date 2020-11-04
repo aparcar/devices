@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7628AN
+device_type: Range Extender
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: WL-WN575A3B
+serial: none
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 5f6e94855113b0c37fba57eda4af0b0427457b98
+target:
+- ramips/mt7628
+variant: ''
+vendor: WAVLINK
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7628AN
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7628AN
+  protocol:
+  - a
+  - n
+  - ac

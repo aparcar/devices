@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 533
+  model: Atheros AR9342
+device_type: WiFi AP
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: LiteAP AC LAP-120
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 23f9b2d9a981c61b7166557febde31778d13b86f
+target:
+- ath79/generic
+variant: ''
+vendor: Ubiquiti
+wifi:
+- driver: ath10k-ct-smallbuffers
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA988x
+  protocol:
+  - a
+  - n
+  - ac

@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 256
+  model: Broadcom BCM6348
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 16
+model: USR9108
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: acf0ec224f542ede8ec1a3967c94130ce3d75232
+target:
+- brcm63xx/generic
+variant: A
+vendor: US Robotics
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318 (mini-PCI)
+  protocol:
+  - b
+  - g

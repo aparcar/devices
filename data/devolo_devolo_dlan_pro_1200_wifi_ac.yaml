@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 560
+  model: Atheros AR9344
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: dLAN pro 1200+ WiFi ac
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 1eccdb4fd4c96615ed99c78b603f03a2e46a4d14
+target:
+- ar71xx/generic
+variant: ''
+vendor: Devolo
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9882-BR4A
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath9k
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9882-BR4A
+  protocol:
+  - a
+  - n
+  - ac

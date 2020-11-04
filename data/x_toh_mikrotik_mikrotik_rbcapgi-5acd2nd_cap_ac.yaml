@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 4
+  mhz: 716
+  model: Qualcomm Atheros IPQ4018
+device_type: WiFi AP
+ethernet:
+- port_count: 2
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: RBcAPGi-5acD2nD (cAP ac)
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- ipq40xx/generic
+variant: ''
+vendor: MikroTik
+wifi:
+- driver: ath10k
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k
+  freq_ghz: 5.0
+  hardware: ''
+  protocol:
+  - a
+  - n
+  - ac

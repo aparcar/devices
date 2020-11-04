@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1200
+  model: Marvell 88F6281
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 256
+model: NSA310
+sata_ports: 2
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: unknown
+supported_since_commit: 94676dd99d96871e9f540a8ace26bdb317c010cf
+target:
+- kirkwood/generic
+variant: ''
+vendor: ZyXEL
+wifi: []

@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 400
+  model: Atheros AR7240
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: TL-WR740N
+serial: none
+storage:
+- size_mb: 2
+  type: unknown
+target:
+- ar71xx/tiny
+variant: v2.1 (BR)
+vendor: TP-Link
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n

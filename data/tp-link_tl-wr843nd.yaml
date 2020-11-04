@@ -1,0 +1,31 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 535
+  model: Atheros AR9341
+detachable_antennas: 2
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: TL-WR843ND
+serial: none
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: df2e3121009708c461271538bb18aa9712568cf8
+target:
+- ar71xx/tiny
+variant: v1
+vendor: TP-Link
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9341
+  protocol:
+  - b
+  - g
+  - n

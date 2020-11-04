@@ -1,0 +1,21 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 300
+  model: Broadcom BCM4780
+device_type: NAS
+ethernet: []
+jtag: false
+memory_mb:
+- 32
+model: SimpleShare
+serial: none
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- brcm47xx/generic
+variant: ''
+vendor: SimpleTech
+wifi: []

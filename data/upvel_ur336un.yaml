@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 384
+  model: Ralink RT305x
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: UR-336UN
+serial: none
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 1ab80c78171515cd6181d6eeb0a33dda2f7442e3
+target:
+- ramips/rt305x
+variant: ''
+vendor: Upvel
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT305x
+  protocol:
+  - b
+  - g
+  - n

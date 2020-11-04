@@ -1,0 +1,36 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 480
+  model: Broadcom BCM4718
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 64
+model: F7D4401 (Play)
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- brcm47xx/generic
+variant: '1'
+vendor: Belkin
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4718
+  protocol:
+  - b
+  - g
+  - n
+- driver: b43
+  freq_ghz: 5.0
+  hardware: Broadcom BCM4718
+  protocol:
+  - a
+  - n

@@ -1,0 +1,26 @@
+audio_ports:
+- Line
+- out
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 720
+  model: Texas Instruments OMAP3530
+device_type: Single Board Computer
+ethernet: []
+jtag: true
+memory_mb:
+- 256
+model: BeagleBoard
+serial: 115200/8N1
+storage:
+- type: SD
+supported_since_commit: 69aa85a0d26cc465ab74b1411f5805bb8a3596db
+target:
+- omap/generic
+variant: ''
+vendor: Texas Instruments
+video_ports:
+- DVI-D
+wifi: []

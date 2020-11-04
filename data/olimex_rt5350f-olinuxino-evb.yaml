@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 360
+  model: Ralink RT5350F
+device_type: Single Board Computer
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: RT5350F-OLinuXino-EVB
+serial: 57600/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 633c46a1d42a1c4f0c723a606c8d08c1f77ac0bd
+target:
+- ramips/rt305x
+variant: Rev. A
+vendor: Olimex
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT5350F
+  protocol:
+  - b
+  - g
+  - n

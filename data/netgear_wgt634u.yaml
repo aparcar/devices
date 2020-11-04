@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 200
+  model: Broadcom BCM5365
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: WGT634U
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 311fc9cf30d9d2719e1ef168d00bc92dce681723
+target:
+- brcm47xx/legacy
+variant: ''
+vendor: Netgear
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g

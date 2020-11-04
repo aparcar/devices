@@ -1,0 +1,36 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 400
+  model: Atheros AR7240
+device_type: Single Board Computer
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: WPJ72Z
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- ar71xx/generic
+variant: 7B06
+vendor: Compex
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ALL Compex Atheros WLE200 series mini-PCIe
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: ALL Compex Atheros WLE200 series mini-PCIe
+  protocol:
+  - a
+  - n

@@ -1,0 +1,29 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 500
+  model: Broadcom BCM5357
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: ZXHN H218N
+serial: none
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- brcm47xx/mips74k
+variant: ''
+vendor: ZTE
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n

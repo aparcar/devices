@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 384
+  model: Ralink RT3052F
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: JHR-N825R
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: 9d828931f12c70d503194e0e98e9ad5a69d47554
+target:
+- ramips/rt305x
+variant: ''
+vendor: JCG
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT3052F
+  protocol:
+  - b
+  - g
+  - n

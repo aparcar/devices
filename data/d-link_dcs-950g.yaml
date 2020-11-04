@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: ADMboot
+cpu:
+  cores: 1
+  mhz: 175
+  model: Infineon ADM5120
+detachable_antennas: 1
+device_type: Camera
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: DCS-950G
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- adm5120/generic
+variant: A4
+vendor: D-Link
+wifi:
+- driver: rt2500pci
+  freq_ghz: 2.4
+  hardware: Ralink RT2560
+  protocol:
+  - b
+  - g

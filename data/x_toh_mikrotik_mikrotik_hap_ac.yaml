@@ -1,0 +1,36 @@
+auto_converted: true
+cpu:
+  cores: 4
+  mhz: 716
+  model: Qualcomm Atheros IPQ4018
+device_type: Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: RBD52G-5HacD2HnD-TC (hAP ac)
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- ipq40xx/generic
+variant: ''
+vendor: MikroTik
+wifi:
+- driver: other
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n
+- driver: other
+  freq_ghz: 5.0
+  hardware: ''
+  protocol:
+  - a
+  - n
+  - ac

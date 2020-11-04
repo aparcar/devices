@@ -1,0 +1,29 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 235
+  model: Infineon PSB50505
+device_type: Modem
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: SMT-G3220
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- lantiq/ase
+variant: ''
+vendor: Samsung
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Atheros
+  protocol:
+  - b
+  - g

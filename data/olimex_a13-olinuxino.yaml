@@ -1,0 +1,32 @@
+audio_ports:
+- Microphone
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1000
+  model: Allwinner A13
+device_type: Single Board Computer
+ethernet: []
+jtag: false
+memory_mb:
+- 512
+model: A13-OLinuXino-WIFI
+serial: unknown_params
+storage:
+- type: microSD
+supported_since_commit: f58bfd1df4e4a9b84a0e94691986c38bab6d8730
+target:
+- sunxi/cortexa8
+variant: ''
+vendor: Olimex
+video_ports:
+- VGA
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n

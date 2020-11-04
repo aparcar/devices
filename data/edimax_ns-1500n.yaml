@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 320
+  model: Ralink RT3050F
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: NS-1500N
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- ramips/rt305x
+variant: 1.0A
+vendor: Edimax
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink (integrated)
+  protocol:
+  - b
+  - g
+  - n

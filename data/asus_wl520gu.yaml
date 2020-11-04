@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 240
+  model: Broadcom BCM5354
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 16
+model: WL-520gU
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: e229b1b849c01e73aa570cc77c52c63474380d29
+target:
+- brcm47xx/legacy
+variant: ''
+vendor: Asus
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318 rev. 13
+  protocol:
+  - b
+  - g

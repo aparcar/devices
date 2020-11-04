@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 533
+  model: Intel IXP425
+device_type: Router
+ethernet:
+- port_count: 10
+  speed_mbit: 100
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 32
+model: FVX538
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- ixp4xx/generic
+variant: v1
+vendor: Netgear
+wifi: []

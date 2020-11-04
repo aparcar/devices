@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: other
+cpu:
+  cores: 1
+  mhz: 560
+  model: Atheros AR9344
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: Z1
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: 68d649f5cd9ee2f6fda00df7bde4b9074474becf
+target:
+- ar71xx/generic
+variant: ''
+vendor: Meraki
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9344
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath9k
+  freq_ghz: 5.0
+  hardware: Atheros AR9344
+  protocol:
+  - a
+  - n

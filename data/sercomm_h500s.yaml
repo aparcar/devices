@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 400
+  model: Broadcom BCM63167
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: H500-s lowi
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: ff2c96333f418c
+target:
+- brcm63xx/smp
+variant: v1
+vendor: Sercomm
+wifi:
+- driver: ''
+  freq_ghz: 2.4
+  hardware: Broadcom BCM435f; Quantenna QT3740BC
+  protocol:
+  - b
+  - g
+  - n
+- driver: ''
+  freq_ghz: 5.0
+  hardware: Broadcom BCM435f; Quantenna QT3740BC
+  protocol:
+  - a
+  - n
+  - ac

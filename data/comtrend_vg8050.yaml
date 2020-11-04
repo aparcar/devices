@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 400
+  model: Broadcom BCM63169
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: VG-8050
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: daee6b466146f
+target:
+- bcm63xx/smp
+variant: ''
+vendor: Comtrend
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM6362
+  protocol:
+  - b
+  - g
+  - n

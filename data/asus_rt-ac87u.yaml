@@ -1,0 +1,39 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 1000
+  model: Broadcom BCM4709A0
+detachable_antennas: 4
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 256
+model: RT-AC87U
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: 78b0da393b0ec4290c868d839ec524c807f25c54
+target:
+- bcm53xx/generic
+variant: ''
+vendor: Asus
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Quantenna QT3840BC
+  protocol:
+  - b
+  - g
+  - n
+- driver: b43
+  freq_ghz: 5.0
+  hardware: Quantenna QT3840BC
+  protocol:
+  - a
+  - n
+  - ac

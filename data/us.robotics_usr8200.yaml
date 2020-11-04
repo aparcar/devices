@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 266
+  model: Intel IXP422
+device_type: Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: USR8200
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- ixp4xx/generic
+variant: ''
+vendor: US Robotics
+wifi: []

@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+
+import csv
+import yaml
+from pathlib import Path
+import re
+
+devices = []
+
+missing = {
+    "fccid": "",
+    "packagearchitecture": "mips_24kc",
+    "switch": "Infineon ADM6996I",
+    "vlan": "",
+    "modem": "ADSL2+",
+    "usbports": "2x 2.0",
+    "ledcount": "",
+    "buttoncount": "2",
+    "gpios": "",
+}
+
+
+def convert_wifi(row):
+    ret = []
+    if row["wlan24ghz"] and row["wlan24ghz"] != "-":
+        ret.append(
+            dict(
+                protocol=row["wlan24ghz"].split("/"),
+                freq_ghz=2.4,
+                driver=row["wlandriver"],
+                hardware=row["wlanhardware"],
+            )
+        )
+    if row["wlan50ghz"] and row["wlan50ghz"] != "-":
+        ret.append(
+            dict(
+                protocol=row["wlan50ghz"].split("/"),
+                freq_ghz=5.0,
+                driver=row["wlandriver"],
+                hardware=row["wlanhardware"],
+            )
+        )
+    return ret
+
+
+def convert_ethernet(row):
+    ret = []
+    if row["ethernet100mports"] and row["ethernet100mports"] != "-":
+        ret.append(dict(speed_mbit=100, port_count=int(row["ethernet100mports"])))
+    if row["ethernetgbitports"] and row["ethernetgbitports"] != "-":
+        ret.append(dict(speed_mbit=1000, port_count=int(row["ethernetgbitports"])))
+    return ret
+
+
+def convert_flashmb(flashmb):
+    match = re.search("^(\d+)? ?([a-zA-Z ]+)?$", flashmb)
+    ret = {}
+    if flashmb.startswith("more"):
+        return ret
+
+    if match.group(1):
+        ret["size_mb"] = int(match.group(1))
+    ret["type"] = match.group(2) or "unknown"
+    return ret
+
+
+def convert_sataports(sataports):
+    match = re.search("^(\d)(x SATA)?$", sataports)
+    if match:
+        return int(match.group(1))
+
+
+with open("toh.csv") as csvfile:
+    reader = csv.DictReader(csvfile, dialect="excel-tab")
+    for row in reader:
+        if row["devicetype"] == "Emulator":
+            continue
+        device_id = row["devicepage"][4:].replace(":", "_")
+        device = dict(
+            vendor=row["brand"],
+            model=row["model"],
+            variant=row["version"],
+            device_type=row["devicetype"],
+            cpu=dict(
+                model=row["cpu"],
+                cores=int(row["cpucores"] or 0),
+                mhz=int(float(row["cpumhz"] or 1)),
+            ),
+            memory_mb=[int(row["rammb"] or 0)],
+            storage=[convert_flashmb(row["flashmb"])],
+            target=[f"{row['target']}/{row['subtarget'] or 'generic'}"],
+            jtag=True if row["jtag"] == "Yes" else False,
+            serial="unknown_params" if row["serial"] == "Yes" else "none",
+            wifi=convert_wifi(row),
+            ethernet=convert_ethernet(row),
+            auto_converted=True,
+        )
+        if row["supportedsincecommit"]:
+            device["supported_since_commit"] = row["supportedsincecommit"]
+        # to inconsistent
+        # if row["powersupply"]:
+        #     device["power_supply"] = row["powersupply"]
+        if row["bootloader"] and row["bootloader"] != "-":
+            device["bootloader"] = row["bootloader"]
+        if row["bluetooth"] and row["bluetooth"] != "-":
+            device["bluetooth"] = "4.0" if row["bluetooth"] == "4" else row["bluetooth"]
+
+        if row["videoports"] and row["videoports"] != "-":
+            device["video_ports"] = row["videoports"].split()
+        if row["audioports"] and row["audioports"] != "-":
+            device["audio_ports"] = row["audioports"].split()
+
+        # to inconsistent
+        # if row["phoneports"] and row["phoneports"] != "-":
+        #    device["phone_ports"] = row["phoneports"].split()
+        if row["serialconnectionparameters"]:
+            device["serial"] = row["serialconnectionparameters"].replace(" ", "")
+        sata_ports = convert_sataports(row["sataports"])
+        if sata_ports:
+            device["sata_ports"] = sata_ports
+        if row["detachableantennas"] and row["detachableantennas"] != "-":
+            device["detachable_antennas"] = int(row["detachableantennas"])
+
+        if row["target"].startswith("ar71xx-ath79"):
+            device["target"] = [
+                f"ar71xx/{row['subtarget']}",
+                f"ath79/{row['subtarget']}",
+            ]
+
+        Path(f"data/{device_id}.yaml").write_text(yaml.safe_dump(device))

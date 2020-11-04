@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq XWAY ARX168
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: DGN3500B
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- lantiq/xway
+variant: ''
+vendor: Netgear
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ''
+  protocol:
+  - b
+  - g
+  - n

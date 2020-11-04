@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: brnboot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq XWAY Danube
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: ARV7506PW11
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 9759fde40a3c50095097443ed261b5dd33f8b393
+target:
+- lantiq/xway
+variant: ''
+vendor: Arcadyan / Astoria
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT3060F
+  protocol:
+  - b
+  - g
+  - n

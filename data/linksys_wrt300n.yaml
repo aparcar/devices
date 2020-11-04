@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 300
+  model: Broadcom BCM5750
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: WRT300N
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 46f75ee8698d09dcbb97447fcd2c6f5473c52331
+target:
+- bcm47xx/generic
+variant: '1.1'
+vendor: Linksys
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4321
+  protocol:
+  - b
+  - g
+  - n

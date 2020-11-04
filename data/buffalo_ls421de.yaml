@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1200
+  model: Marvell Armada 370
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 512
+model: LS421DE
+sata_ports: 2
+serial: 115200/8N1
+storage:
+- size_mb: 512
+  type: NAND
+supported_since_commit: 85ef69b20299c2c4f4
+target:
+- mvebu/cortexa9
+variant: ''
+vendor: Buffalo
+wifi: []

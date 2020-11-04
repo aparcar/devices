@@ -1,0 +1,29 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 300
+  model: Broadcom BCM6358
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: DSL-2650U/BRU/D
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- brcm63xx/generic
+variant: D2 (RU)
+vendor: D-Link
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318
+  protocol:
+  - b
+  - g

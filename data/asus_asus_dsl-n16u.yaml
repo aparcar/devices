@@ -1,0 +1,30 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7620A + Ralink RT63368
+detachable_antennas: 3
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: DSL-N16U
+serial: none
+storage:
+- size_mb: 32
+  type: unknown
+target:
+- ramips/mt7620
+variant: ''
+vendor: Asus
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7620A
+  protocol:
+  - b
+  - g
+  - n

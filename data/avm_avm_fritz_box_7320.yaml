@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: Adam2
+cpu:
+  cores: 2
+  mhz: 393
+  model: Lantiq PSB50812
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 64
+model: FRITZ!Box Fon WLAN 7320
+serial: 38400/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 2c33df03761f366193eeb2c3ffd28dfea475de41
+target:
+- lantiq/xway
+variant: ''
+vendor: AVM
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9227
+  protocol:
+  - b
+  - g
+  - n

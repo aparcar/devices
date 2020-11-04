@@ -1,0 +1,42 @@
+audio_ports:
+- I2S
+auto_converted: true
+bluetooth: '4.1'
+bootloader: U-Boot
+cpu:
+  cores: 4
+  mhz: 1300
+  model: MediaTek MT7623N
+device_type: Single Board Computer
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 2048
+model: Banana Pi R2
+sata_ports: 2
+serial: 115200/8N1
+storage:
+- type: microSD
+target:
+- mediatek/mt7623
+variant: ''
+vendor: Sinovoip
+video_ports:
+- MIPI
+- DSI
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: MediaTek MT6625L
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: MediaTek MT6625L
+  protocol:
+  - a
+  - n

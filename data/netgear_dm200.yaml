@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 500
+  model: Lantiq XWAY VRX220
+device_type: Modem
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: DM200
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 50e3659703113df036e755e0d483172c3b809242
+target:
+- lantiq/xrx200
+variant: ''
+vendor: Netgear
+wifi: []

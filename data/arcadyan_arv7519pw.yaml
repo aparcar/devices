@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: brnboot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq XWAY Danube PSB 50702
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: ARV7519PW
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: e733242a2399fb444997a6c10f45f15d2166c872
+target:
+- lantiq/xway
+variant: ''
+vendor: Arcadyan / Astoria
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT3062F
+  protocol:
+  - b
+  - g
+  - n

@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 800
+  model: AppliedMicro APM82181
+device_type: Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 512
+model: MX60
+serial: 115200/8N1
+storage:
+- size_mb: 1024
+  type: unknown
+supported_since_commit: f478ec2007b93b87fba606eae49688753281c85f
+target:
+- apm821xx/nand
+variant: ''
+vendor: Meraki
+wifi: []

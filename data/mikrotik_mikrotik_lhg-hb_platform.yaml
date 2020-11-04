@@ -1,0 +1,28 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 1
+  mhz: 650
+  model: Qualcomm Atheros QCA9553
+device_type: WiFi Router
+ethernet: []
+jtag: false
+memory_mb:
+- 64
+model: SXTsq Lite2 (RBSXTsq2nD)
+serial: none
+storage:
+- size_mb: 16
+  type: unknown
+target:
+- ath79/mikrotik
+variant: ''
+vendor: MikroTik
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9531
+  protocol:
+  - b
+  - g
+  - n

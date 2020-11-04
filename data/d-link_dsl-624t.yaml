@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: Adam2
+cpu:
+  cores: 1
+  mhz: 150
+  model: Texas Instruments TNETD7300
+detachable_antennas: 1
+device_type: Modem
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 16
+model: DSL-G624T
+serial: 38400/8N1
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- ar7/generic
+variant: A1 (EU)
+vendor: D-Link
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: TI ACX111 (TNETW1130)
+  protocol:
+  - b
+  - g

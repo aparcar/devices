@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7620A
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 64
+model: BL-W1200
+serial: 57600/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 426fb8cf84ae19b0edc2ed06f7a595bc7b1ed212
+target:
+- ramips/mt7620
+variant: ''
+vendor: LB-LINK
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7620A
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7620A
+  protocol:
+  - a
+  - n
+  - ac

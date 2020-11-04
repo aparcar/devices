@@ -1,0 +1,25 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1200
+  model: Marvell 88F6281
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: GoFlexNet
+sata_ports: 2
+serial: 115200/8N1
+storage:
+- size_mb: 256
+  type: NAND
+supported_since_commit: c89e87d1868cfe670a8fe0b648bdca2dcb704037
+target:
+- kirkwood/generic
+variant: ''
+vendor: Seagate
+wifi: []

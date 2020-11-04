@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 800
+  model: Freescale P1020E
+detachable_antennas: 6
+device_type: Single Board Computer
+ethernet:
+- port_count: 2
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 1024
+model: Freescale P1020EWLAN
+serial: unknown_params
+storage:
+- size_mb: 64
+  type: unknown
+target:
+- mpc85xx/generic
+variant: ''
+vendor: Evaluation boards / unbranded boards
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: 2x Atheros AR9380 (mini-PCIe)
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath9k
+  freq_ghz: 5.0
+  hardware: 2x Atheros AR9380 (mini-PCIe)
+  protocol:
+  - a
+  - n

@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 300
+  model: Broadcom BCM6358
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: AliceGate AGPF
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 6495fa36ea584bbc5f58d21df982bf100e4d6591
+target:
+- brcm63xx/generic
+variant: ''
+vendor: Pirelli
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318 (mini-PCI)
+  protocol:
+  - b
+  - g

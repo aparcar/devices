@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 256
+  model: Broadcom BCM6348
+detachable_antennas: 1
+device_type: Modem
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 16
+model: DV-201AMR
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 5540ca300e5eff94f2df37ce48da8b801f947bb7
+target:
+- brcm63xx/generic
+variant: ''
+vendor: Davolink
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4320 (mini-PCI)
+  protocol:
+  - b
+  - g

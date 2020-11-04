@@ -1,0 +1,36 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 680
+  model: Atheros AR7161
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: MMC543AHV
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- ar71xx/generic
+variant: '6000'
+vendor: Compex
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: ALL Compex Atheros WLM200 series mini-PCI
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: ALL Compex Atheros WLM200 series mini-PCI
+  protocol:
+  - a
+  - n

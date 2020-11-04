@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 360
+  model: Ralink RT5350
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: DIR-320
+serial: 57600/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 5722b32acf21fc6d928333fc1333d397f75c1f86
+target:
+- ramips/rt305x
+variant: B1
+vendor: D-Link
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink WiSOC
+  protocol:
+  - b
+  - g
+  - n

@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 4
+  mhz: 2000
+  model: Marvell Armada 8040
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 0
+model: MACCHIATObin Single Shot
+serial: unknown_params
+storage:
+- type: microSD
+supported_since_commit: 2dc5ce622a35f8924accbfbeda689c763f517f5d
+target:
+- mvebu/cortexa72
+variant: ''
+vendor: Marvell
+wifi: []

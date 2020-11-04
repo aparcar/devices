@@ -1,0 +1,35 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 264
+  model: Broadcom BCM4704
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 16
+model: WNDR3300
+serial: 115200/8N1
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- brcm47xx/legacy
+variant: v1
+vendor: Netgear
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4321
+  protocol:
+  - b
+  - g
+  - n
+- driver: b43
+  freq_ghz: 5.0
+  hardware: Broadcom BCM4321
+  protocol:
+  - a
+  - n

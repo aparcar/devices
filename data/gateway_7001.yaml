@@ -1,0 +1,27 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 266
+  model: Intel IXP422
+device_type: WiFi Router
+ethernet: []
+jtag: true
+memory_mb:
+- 32
+model: '7001'
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- ixp4xx/generic
+variant: g
+vendor: Gateway
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Atheros (mini-PCI)
+  protocol:
+  - b
+  - g

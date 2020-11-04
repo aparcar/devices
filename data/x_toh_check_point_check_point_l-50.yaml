@@ -1,0 +1,32 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 1200
+  model: Marvell 88F6281
+detachable_antennas: 2
+device_type: WiFi Router
+ethernet:
+- port_count: 10
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 512
+model: L-50
+serial: 115200/8N1
+storage:
+- size_mb: 512
+  type: NAND
+supported_since_commit: 67ce9aedd6d3f7995351f478e79e570c01ea71fc
+target:
+- kirkwood/generic
+variant: ''
+vendor: Check Point
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9287 (mini-PCIe)
+  protocol:
+  - b
+  - g
+  - n

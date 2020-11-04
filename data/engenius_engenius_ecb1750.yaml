@@ -1,0 +1,39 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 720
+  model: Qualcomm Atheros QCA9558
+detachable_antennas: 6
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: ECB1750
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 30dcbc741d84e36ea5408d99593ccb35f900cb5e
+target:
+- ath79/generic
+variant: v1
+vendor: EnGenius
+wifi:
+- driver: ath10k-ct
+  freq_ghz: 2.4
+  hardware: Qualcomm QCA9880-BR4A (Senao PCE4553AH)
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k-ct
+  freq_ghz: 5.0
+  hardware: Qualcomm QCA9880-BR4A (Senao PCE4553AH)
+  protocol:
+  - a
+  - n
+  - ac

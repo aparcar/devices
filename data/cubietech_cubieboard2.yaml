@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 1000
+  model: Allwinner A20
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 1024
+model: CubieBoard2
+serial: unknown_params
+storage:
+- type: microSD
+supported_since_commit: 2d2254c9ce47b2978465aff5b62c2d997ebf0dd3
+target:
+- sunxi/cortexa7
+variant: ''
+vendor: Cubitech
+wifi: []

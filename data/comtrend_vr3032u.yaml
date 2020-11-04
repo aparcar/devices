@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 2
+  mhz: 400
+  model: Broadcom BCM63168
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: VR-3032u
+serial: unknown_params
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: 367a30389d298948a3c4867dd0261bb942371147
+target:
+- bcm63xx/smp
+variant: ''
+vendor: Comtrend
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Broadcom BCM63168
+  protocol:
+  - b
+  - g
+  - n

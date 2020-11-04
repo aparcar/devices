@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 800
+  model: AppliedMicro APM82181
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 256
+model: MyBook Live
+sata_ports: 1
+serial: unknown_params
+storage:
+- type: HDD
+supported_since_commit: dc7efaefb53d4671893add07934839eb8d44934d
+target:
+- apm821xx/sata
+variant: Single
+vendor: Western Digital
+wifi: []

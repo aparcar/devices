@@ -1,0 +1,29 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 354
+  model: Broadcom BCM4717
+device_type: WiFi AP
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: VEN401
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- brcm47xx/mips74k
+variant: ''
+vendor: Cisco
+wifi:
+- driver: b43
+  freq_ghz: 5.0
+  hardware: Broadcom BCM4717
+  protocol:
+  - a
+  - n

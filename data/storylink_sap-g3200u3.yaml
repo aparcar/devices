@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621AT
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: SAP-G3200U3
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: dcae3723fdde4ef48ee1336abfbd2d57a2b8cc85
+target:
+- ramips/mt7621
+variant: ''
+vendor: STORYLiNK
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7612EN
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7612EN
+  protocol:
+  - a
+  - n
+  - ac

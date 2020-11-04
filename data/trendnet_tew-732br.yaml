@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 535
+  model: Atheros AR9341 rev 1
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: TEW-732BR
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: cdda5b041f3a98513a6b9916fffbea70c173ed5f
+target:
+- ar71xx/generic
+variant: 1.0R
+vendor: TRENDnet
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9341
+  protocol:
+  - b
+  - g
+  - n

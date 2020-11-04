@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 720
+  model: Qualcomm Atheros QCA9558
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: F9K1115 (AC 1750 DB)
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 211cac98d559fdcb11fd0825aaf165da15c87b71
+target:
+- ar71xx/tiny
+variant: v2
+vendor: Belkin
+wifi:
+- driver: ath10k
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
+  protocol:
+  - a
+  - n
+  - ac

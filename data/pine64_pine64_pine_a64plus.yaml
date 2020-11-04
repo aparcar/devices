@@ -1,0 +1,29 @@
+audio_ports:
+- Line
+- out
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 4
+  mhz: 1152
+  model: Allwinner A64
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 1024
+model: PINE A64+
+serial: 115200/8N1
+storage:
+- type: microSDHC
+supported_since_commit: e080a7ce07ee8cd63c71e1469853a233d9bc7a4c
+target:
+- sunxi/cortexa53
+variant: ''
+vendor: Pine64
+video_ports:
+- MIPI
+- DSI
+wifi: []

@@ -1,0 +1,22 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 333
+  model: Broadcom BCM4704KPBG
+device_type: Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: BHR-4RV
+serial: none
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- brcm47xx/legacy
+variant: ''
+vendor: Buffalo
+wifi: []

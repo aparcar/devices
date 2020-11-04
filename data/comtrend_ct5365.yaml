@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 240
+  model: Broadcom BCM6348
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 16
+model: CT-5365
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: e490cc7e14d90c1e6fc4280cfc1af4b836533f09
+target:
+- brcm63xx/generic
+variant: ''
+vendor: Comtrend
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318
+  protocol:
+  - b
+  - g

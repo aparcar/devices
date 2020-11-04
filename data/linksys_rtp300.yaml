@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: PSPBoot
+cpu:
+  cores: 1
+  mhz: 200
+  model: Texas Instruments TNETV1060
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: RTP300
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- ar7/generic
+variant: '1'
+vendor: Linksys
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9103
+  protocol:
+  - b
+  - g
+  - n

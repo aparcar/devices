@@ -1,0 +1,30 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 350
+  model: Atheros AR7240
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: RT150M
+serial: none
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- ar71xx/generic
+variant: v1
+vendor: Pacific Networks
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR92xx (onboard)
+  protocol:
+  - b
+  - g
+  - n

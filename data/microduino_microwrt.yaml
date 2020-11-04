@@ -1,0 +1,32 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7620A
+detachable_antennas: 2
+device_type: Single Board Computer
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: MicroWRT Core
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: b7f19a5b261966a6fc2a587ea43c1dd6aa189a55
+target:
+- ramips/mt7620
+variant: ''
+vendor: Microduino
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7620A
+  protocol:
+  - b
+  - g
+  - n

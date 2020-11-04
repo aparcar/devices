@@ -1,0 +1,26 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7620A
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+- port_count: 1
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: HC5861
+serial: none
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: dd8f5abb23c7222e427ad10703164c9aef13b148
+target:
+- ramips/mt7620
+variant: ''
+vendor: HiWiFi/Gee
+wifi: []

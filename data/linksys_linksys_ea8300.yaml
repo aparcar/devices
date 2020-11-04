@@ -1,0 +1,39 @@
+auto_converted: true
+bluetooth: '4.1'
+bootloader: U-Boot
+cpu:
+  cores: 4
+  mhz: 717
+  model: Qualcomm IPQ4019
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 256
+model: EA8300
+serial: 115200/8N1
+storage:
+- size_mb: 256
+  type: NAND
+supported_since_commit: 819e7946b0964725dab50c92797f49cf4053d955
+target:
+- ipq40xx/generic
+variant: ''
+vendor: Linksys
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9886
+  protocol:
+  - b
+  - g
+  - n
+- driver: unknown
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9886
+  protocol:
+  - a
+  - n
+  - ac

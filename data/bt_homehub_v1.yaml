@@ -1,0 +1,28 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 256
+  model: Broadcom BCM6348
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: Home Hub 1
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+target:
+- brcm63xx/generic
+variant: '1.5'
+vendor: BT
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4318 (onboard)
+  protocol:
+  - b
+  - g

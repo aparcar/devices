@@ -1,0 +1,30 @@
+auto_converted: true
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq Danube
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: WAV-281
+serial: 115200/8N1
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: ee9ed69f0ff6c39776b50cd45aad66a62395a666
+target:
+- lantiq/xway_legacy
+variant: v1
+vendor: AirTies
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT2527L
+  protocol:
+  - b
+  - g
+  - n

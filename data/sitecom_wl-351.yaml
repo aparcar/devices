@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 384
+  model: Ralink RT3052_MP2
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 32
+model: WL-351
+serial: 57600/8N1
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: 7b1e525b56743a96c52cb25a6a12cbe7f5d58995
+target:
+- ramips/rt305x
+variant: v1 002
+vendor: Sitecom
+wifi:
+- driver: rt2800pci
+  freq_ghz: 2.4
+  hardware: Ralink RT2800pci
+  protocol:
+  - b
+  - g
+  - n

@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 580
+  model: MediaTek MT7628N
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: TL-MR3420
+serial: 115200/8N1
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 39e9bfb18199b046bd3b613002112e4e6dd53658
+target:
+- ramips/mt76x8
+variant: v5
+vendor: TP-Link
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7628N
+  protocol:
+  - b
+  - g
+  - n

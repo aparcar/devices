@@ -1,0 +1,36 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 533
+  model: Intel IXP425
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: Pronghorn SBC250
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 1f68c4745d77d681991a6059fd8ad42418e576de
+target:
+- ixp4xx/generic
+variant: ''
+vendor: ADI Engineering
+wifi:
+- driver: ath5k
+  freq_ghz: 2.4
+  hardware: EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
+  protocol:
+  - b
+  - g
+- driver: ath5k
+  freq_ghz: 5.0
+  hardware: EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
+  protocol:
+  - a

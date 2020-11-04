@@ -1,0 +1,33 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 560
+  model: Atheros AR9344
+detachable_antennas: 2
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+- port_count: 1
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: DR344-NAS27
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: eb8ff566848fce7c9d2c16c3eb7c22559a9fae0e
+target:
+- ar71xx/generic
+variant: ''
+vendor: Wallys
+wifi:
+- driver: ath9k
+  freq_ghz: 5.0
+  hardware: Atheros AR9344
+  protocol:
+  - a
+  - n

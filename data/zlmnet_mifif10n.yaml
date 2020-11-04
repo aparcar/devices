@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 360
+  model: Ralink RT5350F
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: MIFIF10N
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- ramips/rt305x
+variant: ''
+vendor: ZLMnet
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT5350F
+  protocol:
+  - b
+  - g
+  - n

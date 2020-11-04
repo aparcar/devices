@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 360
+  model: Ralink RT5350F
+device_type: Single Board Computer
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: VoCore
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 21845cb45da7b6da12fe977b38bfa68d4f72d9c1
+target:
+- ramips/rt305x
+variant: v1.0
+vendor: VoCore
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Ralink RT5350F
+  protocol:
+  - b
+  - g
+  - n

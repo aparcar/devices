@@ -1,0 +1,23 @@
+auto_converted: true
+cpu:
+  cores: 1
+  mhz: 266
+  model: Intel IXP422
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: NSLU2
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 3fa8a58011c5e92888179305c9cd82d48c986e50
+target:
+- ixp4xx/generic
+variant: ''
+vendor: Linksys
+wifi: []

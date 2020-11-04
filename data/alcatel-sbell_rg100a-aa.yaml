@@ -1,0 +1,33 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 2
+  mhz: 300
+  model: Broadcom BCM6358
+device_type: Modem
+ethernet: []
+jtag: false
+memory_mb:
+- 32
+model: RG100A-AA
+serial: 115200/8N1
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: ada5848ba6e6d7a55c5123895aac0a258cb17996
+target:
+- brcm63xx/generic
+variant: Rev 0
+vendor: Alcatel-Sbell
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM6358
+  protocol:
+  - b
+  - g
+- driver: b43
+  freq_ghz: 5.0
+  hardware: Broadcom BCM6358
+  protocol:
+  - a

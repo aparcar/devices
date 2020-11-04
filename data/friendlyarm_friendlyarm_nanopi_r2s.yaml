@@ -1,0 +1,21 @@
+auto_converted: true
+cpu:
+  cores: 4
+  mhz: 1300
+  model: Rockchip RK3328
+device_type: Router
+ethernet:
+- port_count: 2
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 1024
+model: NanoPi R2S
+serial: 1500000/8N1
+storage:
+- type: microSDHC
+target:
+- rockchip/armv8
+variant: ''
+vendor: FriendlyARM
+wifi: []

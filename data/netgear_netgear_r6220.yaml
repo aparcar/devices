@@ -1,0 +1,38 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 880
+  model: MediaTek MT7621ST
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: R6220
+serial: 57600/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: 38bee61dab029a7608088f64da71c19cfc8cf267
+target:
+- ramips/mt7621
+variant: ''
+vendor: Netgear
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7612EN
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7612EN
+  protocol:
+  - a
+  - n
+  - ac

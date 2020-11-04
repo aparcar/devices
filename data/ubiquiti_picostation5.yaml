@@ -1,0 +1,28 @@
+auto_converted: true
+bootloader: RedBoot
+cpu:
+  cores: 1
+  mhz: 180
+  model: Atheros AR2313
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 16
+model: NanoStation Loco5
+serial: none
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- ath25/generic
+variant: ''
+vendor: Ubiquiti
+wifi:
+- driver: ath5k
+  freq_ghz: 5.0
+  hardware: Atheros AR2313
+  protocol:
+  - a

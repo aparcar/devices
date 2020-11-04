@@ -1,0 +1,33 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 1
+  mhz: 600
+  model: Atheros AR9344
+detachable_antennas: 2
+device_type: Single Board Computer
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: RB2011
+serial: unknown_params
+storage:
+- type: unknown
+supported_since_commit: 6ae5ec16e0f030649e759e340f791df388d6e38d
+target:
+- ar71xx/mikrotik
+variant: ''
+vendor: MikroTik
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: depending on model
+  protocol:
+  - b
+  - g
+  - n

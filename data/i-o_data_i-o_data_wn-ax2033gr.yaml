@@ -1,0 +1,37 @@
+auto_converted: true
+cpu:
+  cores: 2
+  mhz: 880
+  model: MediaTek MT7621A
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: WN-AX2033GR
+serial: 57600/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: e66becb490796d0787f8bd2448ee6f14198a904a
+target:
+- ramips/mt7621
+variant: ''
+vendor: I-O Data
+wifi:
+- driver: mt76
+  freq_ghz: 2.4
+  hardware: MediaTek MT7615
+  protocol:
+  - b
+  - g
+  - n
+- driver: mt76
+  freq_ghz: 5.0
+  hardware: MediaTek MT7615
+  protocol:
+  - a
+  - n
+  - ac

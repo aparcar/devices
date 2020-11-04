@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 560
+  model: Atheros AR9344
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 128
+model: DHP-1565
+serial: none
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: f210f3811a61f9b90bba3218e3b139fda92b6a23
+target:
+- ar71xx/generic
+variant: ''
+vendor: D-Link
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9344
+  protocol:
+  - b
+  - g
+  - n

@@ -1,0 +1,24 @@
+auto_converted: true
+bootloader: RouterBOOT
+cpu:
+  cores: 1
+  mhz: 680
+  model: Atheros AR7161
+device_type: Router
+ethernet:
+- port_count: 9
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 256
+model: RB493G
+serial: 115200/8N1
+storage:
+- type: microSD
+supported_since_commit: a136b676049eb239b67a91ea65000ad38db31568
+target:
+- ar71xx/mikrotik
+- ath79/mikrotik
+variant: ''
+vendor: MikroTik
+wifi: []

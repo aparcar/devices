@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 400
+  model: Atheros AR7240
+device_type: WiFi AP
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: N2
+serial: none
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: 1d3de89f3c93ac82006c933679dd3d4aba775c32
+target:
+- ar71xx/generic
+variant: ''
+vendor: ALFA Network
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9283
+  protocol:
+  - b
+  - g
+  - n

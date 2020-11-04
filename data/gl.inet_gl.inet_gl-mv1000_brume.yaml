@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 2
+  mhz: 1000
+  model: Marvell Armada 3700LP 88F3720
+device_type: Router
+ethernet:
+- port_count: 3
+  speed_mbit: 1000
+jtag: false
+memory_mb:
+- 1024
+model: GL-MV1000 (Brume)
+serial: unknown_params
+storage:
+- type: microSDXC
+supported_since_commit: 050c24f05c85268431515fb118a0710941473f2c
+target:
+- mvebu/cortexa53
+variant: ''
+vendor: GL.iNet
+wifi: []

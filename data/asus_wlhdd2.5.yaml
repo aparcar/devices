@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: CFE
+cpu:
+  cores: 1
+  mhz: 125
+  model: Broadcom BCM4702
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 2
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 16
+model: WL-HDD2.5
+serial: unknown_params
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- brcm47xx/legacy
+variant: ''
+vendor: Asus
+wifi:
+- driver: b43
+  freq_ghz: 2.4
+  hardware: Broadcom BCM4306
+  protocol:
+  - b
+  - g

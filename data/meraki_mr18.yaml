@@ -1,0 +1,37 @@
+auto_converted: true
+bootloader: other
+cpu:
+  cores: 1
+  mhz: 720
+  model: Qualcomm Atheros QCA9558
+device_type: WiFi Router
+ethernet:
+- port_count: 1
+  speed_mbit: 1000
+jtag: true
+memory_mb:
+- 128
+model: MR18
+serial: 115200/8N1
+storage:
+- size_mb: 128
+  type: NAND
+supported_since_commit: abc84551c04783c2d59fdd4aa474d5a82ed30cf5
+target:
+- ar71xx/nand
+variant: ''
+vendor: Meraki
+wifi:
+- driver: ath10k
+  freq_ghz: 2.4
+  hardware: Qualcomm Atheros QCA9558
+  protocol:
+  - b
+  - g
+  - n
+- driver: ath10k
+  freq_ghz: 5.0
+  hardware: Qualcomm Atheros QCA9558
+  protocol:
+  - a
+  - n

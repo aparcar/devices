@@ -1,0 +1,23 @@
+auto_converted: true
+bootloader: ADMboot
+cpu:
+  cores: 1
+  mhz: 150
+  model: Infineon ADM5120
+device_type: NAS
+ethernet:
+- port_count: 1
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 32
+model: DNS-120
+serial: 115200/8N1
+storage:
+- size_mb: 4
+  type: unknown
+target:
+- adm5120/generic
+variant: A2
+vendor: D-Link
+wifi: []

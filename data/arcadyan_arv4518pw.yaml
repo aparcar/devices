@@ -1,0 +1,30 @@
+auto_converted: true
+bootloader: brnboot
+cpu:
+  cores: 2
+  mhz: 333
+  model: Lantiq XWAY Danube
+device_type: WiFi Router
+ethernet:
+- port_count: 4
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 64
+model: ARV4518PW
+serial: 115200/8N1
+storage:
+- size_mb: 4
+  type: unknown
+supported_since_commit: a15b4bf6fc2805d91653e609291a100e232c7f0c
+target:
+- lantiq/xway_legacy
+variant: R01
+vendor: Arcadyan / Astoria
+wifi:
+- driver: unknown
+  freq_ghz: 2.4
+  hardware: Atheros AR2417
+  protocol:
+  - b
+  - g

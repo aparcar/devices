@@ -1,0 +1,32 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 400
+  model: Atheros AR9331
+detachable_antennas: 1
+device_type: WiFi Router
+ethernet:
+- port_count: 3
+  speed_mbit: 100
+jtag: true
+memory_mb:
+- 64
+model: Dorin Platform
+serial: unknown_params
+storage:
+- size_mb: 16
+  type: unknown
+supported_since_commit: 26cf21df024faae5a287854b7427b720b09bd9ad
+target:
+- ar71xx/generic
+variant: Rev 1.2
+vendor: Embedded Wireless
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9331
+  protocol:
+  - b
+  - g
+  - n

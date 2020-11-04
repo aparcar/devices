@@ -1,0 +1,31 @@
+auto_converted: true
+bootloader: U-Boot
+cpu:
+  cores: 1
+  mhz: 400
+  model: Atheros AR9130
+device_type: WiFi Router
+ethernet:
+- port_count: 5
+  speed_mbit: 100
+jtag: false
+memory_mb:
+- 32
+model: MZK-W300NH
+serial: unknown_params
+storage:
+- size_mb: 8
+  type: unknown
+supported_since_commit: c8bf295481f14a5d9ff072cd7629c2b23c16447f
+target:
+- ar71xx/generic
+variant: ''
+vendor: Planex
+wifi:
+- driver: ath9k
+  freq_ghz: 2.4
+  hardware: Atheros AR9102
+  protocol:
+  - b
+  - g
+  - n
