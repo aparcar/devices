@@ -13,14 +13,12 @@ examples:
 
 properties:
   size_mb:
-    $id: '#/properties/size_mb'
     description: Size of the storage in MegaByte
     title: Size
     type: number
     minimum: 1
 
   type:
-    $id: '#/properties/type'
     title: Type
     type: string
     enum:
@@ -38,7 +36,6 @@ properties:
       - unknown
 
   variant:
-    $id: '#/properties/variant'
     title: Variant
     description: One of multiple possible storage variants
     type: boolean

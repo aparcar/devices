@@ -10,16 +10,11 @@ examples:
   - function: status
     color: red
 
-items:
-  anyOf:
-  - $id: '#/properties/led/items/anyOf/0'
-    properties:
-      function:
-        $id: '#/properties/led/items/anyOf/0/properties/function'
-        title: function
-        type: string
+properties:
+  function:
+    title: function
+    type: string
 
-      color:
-        $id: '#/properties/led/items/anyOf/0/properties/color'
-        title: Color
-        type: string
+  color:
+    title: Color
+    type: string
