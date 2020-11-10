@@ -22,14 +22,14 @@ target:
 variant: v1
 vendor: Sercomm
 wifi:
-- driver: ''
+- driver: unknown
   freq_ghz: 2.4
   hardware: Broadcom BCM435f; Quantenna QT3740BC
   protocol:
   - b
   - g
   - n
-- driver: ''
+- driver: unknown
   freq_ghz: 5.0
   hardware: Broadcom BCM435f; Quantenna QT3740BC
   protocol:
