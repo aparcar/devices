@@ -7,6 +7,7 @@ from pathlib import Path
 from sys import argv
 
 def validate_file(instance_file):
+    print(f"Check metadata: {instance_file}")
     instance_content = yaml.safe_load(instance_file.read_text())
     try:
         validate(
@@ -17,6 +18,7 @@ def validate_file(instance_file):
         print(f"Valid metadata: {instance_file}")
 
     except ValidationError as e:
+        print(f"Bad metadata: {instance_file}")
         print(e)
         quit(1)
 
