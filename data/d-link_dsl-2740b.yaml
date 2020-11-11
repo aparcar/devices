@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 300
   model: Broadcom BCM6358
-detachable_antennas: 3
 device_type: Modem
 ethernet:
 - port_count: 4

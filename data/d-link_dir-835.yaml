@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 560
   model: Atheros AR9344
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 5

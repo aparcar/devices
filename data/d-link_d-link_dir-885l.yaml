@@ -3,7 +3,6 @@ cpu:
   cores: 2
   mhz: 1400
   model: Broadcom BCM4709C0
-detachable_antennas: 4
 device_type: WiFi Router
 ethernet:
 - port_count: 5

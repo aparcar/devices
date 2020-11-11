@@ -5,7 +5,6 @@ cpu:
   cores: 2
   mhz: 550
   model: MIPS interAptiv cXT200
-detachable_antennas: 3
 device_type: Single Board Computer
 ethernet:
 - port_count: 1

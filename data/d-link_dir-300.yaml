@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 183
   model: Atheros AR2317
-detachable_antennas: 1
 device_type: WiFi Router
 ethernet:
 - port_count: 5

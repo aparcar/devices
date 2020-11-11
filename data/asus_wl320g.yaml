@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 200
   model: Broadcom BCM5352E
-detachable_antennas: 2
 device_type: Travel Router
 ethernet:
 - port_count: 1

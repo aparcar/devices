@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 880
   model: MediaTek MT7621AT
-detachable_antennas: 4
 device_type: WiFi Router
 ethernet:
 - port_count: 5

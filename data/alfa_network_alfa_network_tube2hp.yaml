@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 400
   model: Atheros AR9331
-detachable_antennas: 1
 device_type: WiFi AP
 ethernet:
 - port_count: 1

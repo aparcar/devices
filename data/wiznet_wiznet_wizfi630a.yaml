@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 360
   model: Ralink RT5350
-detachable_antennas: 1
 device_type: Single Board Computer
 ethernet:
 - port_count: 3

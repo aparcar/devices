@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 266
   model: Intel IXP425
-detachable_antennas: 1
 device_type: WiFi Router
 ethernet:
 - port_count: 5

@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 300
   model: Broadcom BCM6358
-detachable_antennas: 1
 device_type: WiFi Router
 ethernet:
 - port_count: 5

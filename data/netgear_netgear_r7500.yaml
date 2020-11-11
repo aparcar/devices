@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 1400
   model: Qualcomm Atheros IPQ8064
-detachable_antennas: 4
 device_type: WiFi Router
 ethernet:
 - port_count: 5
@@ -24,14 +23,16 @@ target:
 variant: v1
 vendor: Netgear
 wifi:
-- driver: unknown
+- detachable_antennas: 2
+  driver: unknown
   freq_ghz: 2.4
   hardware: Quantenna QT3840BC + QT2518B
   protocol:
   - b
   - g
   - n
-- driver: unknown
+- detachable_antennas: 2
+  driver: unknown
   freq_ghz: 5.0
   hardware: Quantenna QT3840BC + QT2518B
   protocol:

@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 300
   model: Broadcom BCM5357
-detachable_antennas: 2
 device_type: WiFi Router
 ethernet:
 - port_count: 5

@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 536
   model: Atmel ATSAMA5D35
-detachable_antennas: 4
 device_type: WiFi Router
 ethernet:
 - port_count: 2

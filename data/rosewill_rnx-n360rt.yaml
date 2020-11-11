@@ -3,7 +3,6 @@ cpu:
   cores: 1
   mhz: 400
   model: Atheros AR9132
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 5

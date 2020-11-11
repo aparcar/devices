@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 175
   model: Infineon ADM5120
-detachable_antennas: 1
 device_type: Camera
 ethernet:
 - port_count: 1

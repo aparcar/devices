@@ -4,7 +4,6 @@ cpu:
   cores: 4
   mhz: 1
   model: Qualcomm IPQ4019
-detachable_antennas: 6
 device_type: WiFi Router
 ethernet:
 - port_count: 3

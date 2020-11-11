@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 1400
   model: Qualcomm IPQ8064
-detachable_antennas: 4
 device_type: WiFi Router
 ethernet:
 - port_count: 5
@@ -22,14 +21,16 @@ target:
 variant: v1
 vendor: TP-Link
 wifi:
-- driver: ath10k-ct
+- detachable_antennas: 2
+  driver: ath10k-ct
   freq_ghz: 2.4
   hardware: ''
   protocol:
   - b
   - g
   - n
-- driver: ath10k-ct
+- detachable_antennas: 2
+  driver: ath10k-ct
   freq_ghz: 5.0
   hardware: ''
   protocol:

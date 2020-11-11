@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 333
   model: Lantiq XWAY Danube
-detachable_antennas: 1
 device_type: WiFi Router
 ethernet:
 - port_count: 4

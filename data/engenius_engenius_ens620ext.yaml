@@ -4,7 +4,6 @@ cpu:
   cores: 4
   mhz: 717
   model: Qualcomm Atheros IPQ4018
-detachable_antennas: 4
 device_type: WiFi AP
 ethernet:
 - port_count: 2

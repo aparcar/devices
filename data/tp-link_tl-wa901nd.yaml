@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 750
   model: Qualcomm Atheros TP9343
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 1

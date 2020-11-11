@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 1000
   model: Broadcom BCM63168, Broadcom BCM4709
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 4

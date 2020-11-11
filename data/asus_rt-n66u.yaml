@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 600
   model: Broadcom BCM4706
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 5

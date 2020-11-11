@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 320
   model: Ralink RT305x
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 4

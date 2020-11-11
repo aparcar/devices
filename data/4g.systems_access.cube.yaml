@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 400
   model: Alchemy 1500
-detachable_antennas: 2
 device_type: WiFi Router
 ethernet: []
 jtag: true

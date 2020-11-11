@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 880
   model: MediaTek MT7621A
-detachable_antennas: 8
 device_type: Router
 ethernet:
 - port_count: 5

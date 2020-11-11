@@ -3,7 +3,6 @@ cpu:
   cores: 1
   mhz: 400
   model: Broadcom BCM6362
-detachable_antennas: 2
 device_type: WiFi Router
 ethernet:
 - port_count: 4

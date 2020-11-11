@@ -4,7 +4,6 @@ cpu:
   cores: 1
   mhz: 650
   model: Qualcomm Atheros QCA9531
-detachable_antennas: 3
 device_type: WiFi AP
 ethernet:
 - port_count: 2

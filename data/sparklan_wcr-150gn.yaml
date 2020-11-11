@@ -3,7 +3,6 @@ cpu:
   cores: 1
   mhz: 320
   model: Ralink RT3050
-detachable_antennas: 1
 device_type: Travel Router
 ethernet:
 - port_count: 1

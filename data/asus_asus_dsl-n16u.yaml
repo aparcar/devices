@@ -3,7 +3,6 @@ cpu:
   cores: 1
   mhz: 580
   model: MediaTek MT7620A + Ralink RT63368
-detachable_antennas: 3
 device_type: WiFi Router
 ethernet:
 - port_count: 5

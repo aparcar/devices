@@ -1,5 +1,5 @@
 audio_ports:
-  - type: Line-Out
+- type: Line-Out
 auto_converted: true
 bootloader: U-Boot
 cpu:

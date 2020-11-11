@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 333
   model: Lantiq XWAY ARX168
-detachable_antennas: 2
 device_type: Modem
 ethernet:
 - port_count: 4

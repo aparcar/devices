@@ -4,7 +4,6 @@ cpu:
   cores: 2
   mhz: 1300
   model: Marvell Armada 385 88F6820
-detachable_antennas: 2
 device_type: WiFi Router
 ethernet:
 - port_count: 5
