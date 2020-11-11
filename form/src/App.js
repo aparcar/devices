@@ -26,7 +26,7 @@ function App() {
     showModal();
   };
 
-  fetch("devices/schema.json")
+  fetch("schema.json")
     .then((response) => response.json())
     .then((schema) => {
       render(

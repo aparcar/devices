@@ -7,7 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Merge JSONSCHEMA
+        run: |
+          pip3 install jsonschema pyyaml
+          python3 metadata-validate merge-to-json
+
+      - name: Build form app
+        run: |
           cd form/
           yarn install
           yarn build
