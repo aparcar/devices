@@ -2,6 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 const yaml = require("js-yaml");
 
@@ -24,7 +26,7 @@ function App() {
     showModal();
   };
 
-  fetch("schema.json")
+  fetch("devices/schema.json")
     .then((response) => response.json())
     .then((schema) => {
       render(
@@ -36,6 +38,14 @@ function App() {
     });
   return (
     <>
+      <Navbar bg="primary" variant="dark">
+        <Navbar.Brand href="#home">OpenWrt Device Form</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="https://github.com/aparcar/devices/tree/main/form">
+            Source Code
+          </Nav.Link>
+        </Nav>
+      </Navbar>
       <div id="form">
         <p> Loading schemas...</p>
       </div>
