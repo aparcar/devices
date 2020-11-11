@@ -1,6 +1,7 @@
 {
   "name": "form",
   "version": "0.1.0",
+  "homepage": "/devices/",
   "private": true,
   "dependencies": {
     "@rjsf/bootstrap-4": "^2.4.0",
