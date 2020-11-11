@@ -39,6 +39,7 @@ properties:
       - USB 3.2 Gen 2x2
 
   port_count:
-    title: Port Count
-    type: integer
+    title: Number of ports
+    type: number
+    multipleOf: 1.0
     minimum: 1

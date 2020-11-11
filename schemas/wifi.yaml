@@ -1,5 +1,5 @@
 $id: https://openwrt.org/schema/wifi.yaml
-title: WiFi
+title: WiFi module
 description: WiFi hardware description
 type: object
 
@@ -11,6 +11,7 @@ required:
 examples:
   - driver: unknown
     freq_ghz: 2.4
+    detachable_antennas: 2
     hardware: Atheros AR2315
 
 properties:
@@ -54,15 +55,19 @@ properties:
 
   version:
     title: WiFi Alliance Version
-    type: array
-    items:
-      type: string
-      enum:
-        - Wi-Fi 6
-        - Wi-Fi 7
+    type: string
+    enum:
+      - Wi-Fi 6
+      - Wi-Fi 7
+
+  detachable_antennas:
+    title: Detachable antennas
+    type: number
+    multipleOf: 1.0
+    minimum: 0
 
   protocols:
-    title: WiFi protocol
+    title: WiFi protocols
     type: array
     items:
       type: string

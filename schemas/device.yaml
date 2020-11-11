@@ -69,6 +69,24 @@ examples:
       - type: Line-In
 
 properties:
+  vendor:
+    $ref: file:vendor.yaml
+
+  model:
+    title: Model
+    type: string
+
+  variant:
+    title: Variant
+    type: string
+
+  target:
+    title: Supported targets
+    type: array
+    items:
+      $ref: file:target.yaml
+    minItems: 1
+
   bootloader:
     $ref: file:bootloader.yaml
 
@@ -84,23 +102,18 @@ properties:
             title: Model
             type: string
         cores:
-            title: The cores schema
-            type: integer
+            title: Number of Cores
+            type: number
+            multipleOf: 1.0
             minimum: 1
         mhz:
             title: MHz
-            type: integer
+            type: number
+            multipleOf: 1.0
             minimum: 1
-
-  detachable_antennas:
-    title: The detachable_antennas schema
-    type: integer
-    minimum: 0
 
   device_type:
     $ref: file:device-type.yaml
-    title: Type
-    type: string
 
   ethernet:
     title: Ethernets
@@ -136,20 +149,12 @@ properties:
     items:
       type: number
 
-  model:
-    title: Model
-    type: string
-
   supported_since_commit:
     title: Supported Since Git Commit
     type: string
     pattern: "^[a-zA-Z0-9]+$"
     minLength: 6
     maxLength: 40
-
-  variant:
-    title: Variant
-    type: string
 
   outdoor:
     title: Outdoor
@@ -174,12 +179,14 @@ properties:
 
   sata_ports:
     title: Sata Ports
-    type: integer
+    type: number
+    multipleOf: 1.0
     minimum: 0
 
   gpio_pins:
     title: GPIO Pins
-    type: integer
+    type: number
+    multipleOf: 1.0
     minimum: 0
 
   storage:
@@ -188,15 +195,6 @@ properties:
     items:
       $ref: file:storage.yaml
     minItems: 1
-
-  target:
-    type: array
-    items:
-      $ref: file:target.yaml
-    minItems: 1
-
-  vendor:
-    $ref: file:vendor.yaml
 
   vlan:
     title: VLAN
@@ -210,78 +208,84 @@ properties:
     title: Audio Ports
     type: array
     items:
-      anyOf:
-        - type: object
-          required:
-            - type
-          properties:
-            type:
-              type: string
-              enum:
-                - HDMI
-                - Headphone
-                - I2S
-                - Line
-                - Line-In
-                - Line-Out
-                - Microphone
-                - S/PDIF
-                - other
-                - unknown
-            port_count:
-              title: port_count
-              type: integer
-              minimum: 1
+      type: object
+      required:
+        - type
+      properties:
+        type:
+          title: Port Type
+          type: string
+          enum:
+            - HDMI
+            - Headphone
+            - I2S
+            - Line
+            - Line-In
+            - Line-Out
+            - Microphone
+            - S/PDIF
+            - other
+            - unknown
+        port_count:
+          title: Numer of ports
+          title: port_count
+          type: number
+          multipleOf: 1.0
+          minimum: 1
 
   video_ports:
     title: Video Ports
     type: array
     items:
-      anyOf:
-        - type: object
-          required:
-            - type
-          properties:
-            type:
-              type: string
-              enum:
-                - Camera
-                - Composite
-                - DVI-D
-                - HDMI
-                - I2S
-                - LVDS
-                - MIPI
-                - DSI
-                - VGA
-                - other
-                - unknown
-            port_count:
-              title: port_count
-              type: integer
-              minimum: 1
+      type: object
+      required:
+        - type
+      properties:
+        type:
+          title: Port Type
+          type: string
+          enum:
+            - Camera
+            - Composite
+            - DVI-D
+            - HDMI
+            - I2S
+            - LVDS
+            - MIPI
+            - DSI
+            - VGA
+            - other
+            - unknown
+        port_count:
+          title: Numer of ports
+          title: port_count
+          type: number
+          multipleOf: 1.0
+          minimum: 1
 
   phone_ports:
     title: Phone Ports
     type: array
     items:
-      anyOf:
-        - type: object
-          required:
-            - type
-          properties:
-            type:
-              type: string
-              enum:
-                - DECT
-                - ISDN
-                - POTS
-                - other
-                - unknown
-            port_count:
-              title: port_count
-              type: integer
-              minimum: 1
+      type: object
+      required:
+        - type
+      properties:
+        type:
+          title: Port Type
+          type: string
+          enum:
+            - DECT
+            - ISDN
+            - POTS
+            - other
+            - unknown
+        port_count:
+          title: Numer of ports
+          type: number
+          multipleOf: 1.0
+          minimum: 1
+          default: 1
 
   bluetooth:
     title: Bluetooth
@@ -297,5 +301,7 @@ properties:
 
   wifi:
     type: array
+    title: WiFi
+    description: WiFi modules installed in device
     items:
       $ref: file:wifi.yaml

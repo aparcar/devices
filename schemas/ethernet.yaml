@@ -13,13 +13,17 @@ examples:
 
 properties:
   function:
-    title: function
+    title: Function
     type: string
 
   speed_mbit:
     title: Speed in MBit
     type: number
+    multipleOf: 1.0
+    minimum: 1
 
   port_count:
-    title: port_count
-    type: integer
+    title: Number of ports
+    type: number
+    multipleOf: 1.0
+    minimum: 1

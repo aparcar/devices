@@ -1,6 +1,6 @@
 $id: https://openwrt.org/schema/bootloader.yaml
 $schema: http://json-schema.org/draft-07/schema#
-title: bootloader
+title: Bootloader
 description: Bootloader of device
 type: string
 enum:
