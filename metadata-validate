@@ -6,6 +6,17 @@ from jsonschema import validate, RefResolver, ValidationError
 from pathlib import Path
 from sys import argv
 
+
+def replace_ref(path):
+    for key, value in path.items():
+        if key == "$ref":
+            path.update(store[value])
+            path.pop("$ref")
+            break
+        elif type(value) == dict:
+            replace_ref(value)
+
+
 def validate_file(instance_file):
     print(f"Check metadata: {instance_file}")
     instance_content = yaml.safe_load(instance_file.read_text())
@@ -22,29 +33,34 @@ def validate_file(instance_file):
         print(e)
         quit(1)
 
+
 if len(argv) != 2:
     print(f"{argv[0]} <metadata file>")
     quit(1)
 
-
-instance_files = []
-instance_path = Path(argv[1])
-if instance_path.is_file():
-    instance_files.append(instance_path)
-elif instance_path.is_dir():
-    instance_files.extend(instance_path.glob("*.yaml"))
-else:
-    print(f"Metadata file does not exists at '{instance_path}'")
-    quit(1)
-
-
 schema_path = Path("schemas")
 assert schema_path.is_dir(), f"Schema folder does not exists at '{schema_path}'"
-
+    
 # load YAML schemas
 store = {}
 for schema in schema_path.glob("*.yaml"):
     store[f"file:{schema.name}"] = yaml.safe_load(schema.read_text())
 
-for instance_file in instance_files:
-    validate_file(instance_file)
+if argv[1] == "merge-to-json":
+    device = yaml.safe_load((schema_path / "device.yaml").read_text())
+
+    replace_ref(device["properties"])
+    Path("form/public/schema.json").write_text(json.dumps(device))
+else:
+    instance_files = []
+    instance_path = Path(argv[1])
+    if instance_path.is_file():
+        instance_files.append(instance_path)
+    elif instance_path.is_dir():
+        instance_files.extend(instance_path.glob("*.yaml"))
+    else:
+        print(f"Metadata file does not exists at '{instance_path}'")
+        quit(1)
+
+    for instance_file in instance_files:
+        validate_file(instance_file)
