@@ -44,6 +44,9 @@ function App() {
           <Nav.Link href="https://github.com/aparcar/devices/tree/main/form">
             Source Code
           </Nav.Link>
+          <Nav.Link href="schema_doc.html">
+            Schema
+          </Nav.Link>
         </Nav>
       </Navbar>
       <div id="form">

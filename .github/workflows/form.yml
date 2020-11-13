@@ -13,8 +13,10 @@ jobs:
           python-version: 3.8
       - name: Merge JSONSCHEMA
         run: |
-          pip3 install jsonschema pyyaml
+          pip3 install jsonschema pyyaml json-schema-for-humans
           python3 metadata-validate merge-to-json
+          cd form/public/
+          generate-schema-doc schema.json
 
       - name: Build form app
         run: |
