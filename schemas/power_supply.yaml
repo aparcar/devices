@@ -2,11 +2,6 @@ $id: https://openwrt.org/schema/power_supply.yaml
 title: Power Supply
 type: object
 
-required:
-  - type
-  - volt
-  - ampere
-
 examples:
   - type: DC
     volt: 5
@@ -19,13 +14,25 @@ properties:
     enum:
       - AC
       - DC
+      - none
 
   volt:
-    title: volt
+    title: Volt
     type: number
     minimum: 0
+    default: 0
 
   ampere:
     title: Ampere
     type: number
     minimum: 0
+    default: 0
+
+  poe:
+    title: PoE
+    type: string
+    enum:
+      - 802.3af Type 1 (PoE)
+      - 802.3at Type 2 (PoE+)
+      - 802.3bt Type 3 (PoE++)
+      - none

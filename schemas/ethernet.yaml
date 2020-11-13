@@ -19,8 +19,12 @@ properties:
   speed_mbit:
     title: Speed in MBit
     type: number
-    multipleOf: 1.0
-    minimum: 1
+    enum:
+      - 100
+      - 1000
+      - 10000
+      - 40000
+      - 100000
 
   port_count:
     title: Number of ports

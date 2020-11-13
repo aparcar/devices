@@ -29,6 +29,7 @@ properties:
     title: Version
     type: string
     enum:
+      - Power Only
       - USB 1.0
       - USB 2.0
       - USB 3.0

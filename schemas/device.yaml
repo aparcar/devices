@@ -214,6 +214,7 @@ properties:
         type:
           title: Port Type
           type: string
+          default: unknown
           enum:
             - HDMI
             - Headphone
@@ -223,11 +224,11 @@ properties:
             - Line-Out
             - Microphone
             - S/PDIF
+            - none
             - other
             - unknown
         port_count:
           title: Numer of ports
-          title: port_count
           type: number
           multipleOf: 1.0
           minimum: 1
@@ -243,16 +244,18 @@ properties:
         type:
           title: Port Type
           type: string
+          default: unknown
           enum:
             - Camera
             - Composite
+            - DSI
             - DVI-D
             - HDMI
             - I2S
             - LVDS
             - MIPI
-            - DSI
             - VGA
+            - none
             - other
             - unknown
         port_count:
@@ -273,10 +276,12 @@ properties:
         type:
           title: Port Type
           type: string
+          default: unknown
           enum:
             - DECT
             - ISDN
             - POTS
+            - none
             - other
             - unknown
         port_count:
