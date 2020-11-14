@@ -40,7 +40,7 @@ if len(argv) != 2:
 
 schema_path = Path("schemas")
 assert schema_path.is_dir(), f"Schema folder does not exists at '{schema_path}'"
-    
+
 # load YAML schemas
 store = {}
 for schema in schema_path.glob("*.yaml"):
@@ -51,6 +51,15 @@ if argv[1] == "merge-to-json":
 
     replace_ref(device["properties"])
     Path("form/public/schema.json").write_text(json.dumps(device))
+
+    cpus = {}
+    for device_path in Path("./data/").glob("*.yaml"):
+        device_data = yaml.safe_load(device_path.read_text())
+        cpu_model = device_data["cpu"].pop("model")
+        if cpu_model not in cpus:
+            cpus[cpu_model] = device_data["cpu"]
+    Path("form/public/cpus.json").write_text(json.dumps(cpus))
+
 else:
     instance_files = []
     instance_path = Path(argv[1])
