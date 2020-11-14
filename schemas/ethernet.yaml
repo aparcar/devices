@@ -17,14 +17,29 @@ properties:
     type: string
 
   speed_mbit:
-    title: Speed in MBit
+    title: Port Bandwidth
     type: number
-    enum:
-      - 100
-      - 1000
-      - 10000
-      - 40000
-      - 100000
+    anyOf:
+      - type: number
+        title: 100Mbit/s
+        enum:
+          - 100
+      - type: number
+        title: 1Gbit/s
+        enum:
+          - 1000
+      - type: number
+        title: 10Gbit/s
+        enum:
+          - 10000
+      - type: number
+        title: 40Gbit/s
+        enum:
+          - 40000
+      - type: number
+        title: 100Gbit/s
+        enum:
+          - 100000
 
   port_count:
     title: Number of ports
