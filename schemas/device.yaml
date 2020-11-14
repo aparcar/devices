@@ -6,10 +6,10 @@ type: object
 required:
   - vendor
   - model
+  - target
   - cpu
   - memory_mb
   - storage
-  - target
 
 examples:
   - bootloader: RedBoot
@@ -17,7 +17,6 @@ examples:
       cores: 2
       mhz: 500
       model: slow_cpu_2
-    detachable_antennas: 1
     device_type: WiFi Router
     ethernet:
       - speed_mbit: 100
@@ -52,6 +51,7 @@ examples:
       - driver: barfoo_42
         freq_ghz: 2.4
         hardware: Boofar 5678
+        detachable_antennas: 1
     storage:
       - size_mb: 40
         type: NOR
@@ -73,10 +73,12 @@ properties:
 
   model:
     title: Model
+    description: As written on box
     type: string
 
   variant:
     title: Variant
+    description: e.g. v2
     type: string
 
   target:
@@ -84,6 +86,22 @@ properties:
     type: array
     items:
       $ref: file:target.yaml
+    minItems: 1
+
+  memory_mb:
+    title: Memory in MegaByte
+    description: If multiple variants exists add multiple entries
+    type: array
+    minItems: 1
+    items:
+      type: number
+
+  storage:
+    title: Storage
+    description: Storages available in device
+    type: array
+    items:
+      $ref: file:storage.yaml
     minItems: 1
 
   bootloader:
@@ -120,6 +138,13 @@ properties:
     items:
       $ref: file:ethernet.yaml
 
+  wifi:
+    type: array
+    title: WiFi
+    description: WiFi modules installed in device
+    items:
+      $ref: file:wifi.yaml
+
   usb:
     title: USB Ports
     type: array
@@ -141,13 +166,6 @@ properties:
     description: Migrated from Wiki data source
     type: boolean
 
-  memory_mb:
-    title: Memory in MegaByte
-    type: array
-    minItems: 1
-    items:
-      type: number
-
   supported_since_commit:
     title: Supported Since Git Commit
     type: string
@@ -161,6 +179,18 @@ properties:
 
   power_supply:
     $ref: file:power_supply.yaml
+
+  bluetooth:
+    title: Bluetooth
+    type: string
+    enum:
+      - BLE
+      - "4.0"
+      - "4.1"
+      - "4.2"
+      - "5.0"
+      - "5.1"
+      - "5.2"
 
   serial:
     title: Serial
@@ -187,13 +217,6 @@ properties:
     type: number
     multipleOf: 1.0
     minimum: 0
-
-  storage:
-    title: Storage
-    type: array
-    items:
-      $ref: file:storage.yaml
-    minItems: 1
 
   vlan:
     title: VLAN
@@ -290,22 +313,3 @@ properties:
           multipleOf: 1.0
           minimum: 1
           default: 1
-
-  bluetooth:
-    title: Bluetooth
-    type: string
-    enum:
-      - BLE
-      - "4.0"
-      - "4.1"
-      - "4.2"
-      - "5.0"
-      - "5.1"
-      - "5.2"
-
-  wifi:
-    type: array
-    title: WiFi
-    description: WiFi modules installed in device
-    items:
-      $ref: file:wifi.yaml

@@ -3,6 +3,7 @@ $schema: http://json-schema.org/draft-07/schema#
 title: Bootloader
 description: Bootloader of device
 type: string
+default: unknown
 enum:
   - ADMboot
   - ARMboot
@@ -26,5 +27,6 @@ enum:
   - VxWorks
   - Yamon
   - brnboot
+  - none
   - other
   - unknown

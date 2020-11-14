@@ -6,16 +6,7 @@ required:
   - speed_mbit
   - port_count
 
-examples:
-  - port_count: 1
-    speed_mbit: 100
-    hardware: EtherCoop 1
-
 properties:
-  function:
-    title: Function
-    type: string
-
   speed_mbit:
     title: Port Bandwidth
     type: number
@@ -46,3 +37,7 @@ properties:
     type: number
     multipleOf: 1.0
     minimum: 1
+
+  function:
+    title: Function
+    type: string

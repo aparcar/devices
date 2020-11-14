@@ -31,8 +31,10 @@ properties:
   poe:
     title: PoE
     type: string
+    default: unknown
     enum:
       - 802.3af Type 1 (PoE)
       - 802.3at Type 2 (PoE+)
       - 802.3bt Type 3 (PoE++)
+      - unknown
       - none
