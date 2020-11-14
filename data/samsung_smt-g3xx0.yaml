@@ -23,7 +23,7 @@ vendor: Samsung
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros
+  model: Atheros
   protocol:
   - b
   - g

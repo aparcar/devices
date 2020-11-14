@@ -22,7 +22,7 @@ vendor: Belkin
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT2820
+  model: Ralink RT2820
   protocol:
   - b
   - g

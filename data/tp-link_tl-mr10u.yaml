@@ -25,7 +25,7 @@ vendor: TP-Link
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9287 (onboard)
+  model: Atheros AR9287 (onboard)
   protocol:
   - b
   - g

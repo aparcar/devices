@@ -23,14 +23,14 @@ vendor: NETGEAR
 wifi:
 - driver: mt76
   freq_ghz: 2.4
-  hardware: MediaTek MT7628A
+  model: MediaTek MT7628A
   protocol:
   - b
   - g
   - n
 - driver: mt76
   freq_ghz: 5.0
-  hardware: MediaTek MT7628A
+  model: MediaTek MT7628A
   protocol:
   - a
   - n

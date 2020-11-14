@@ -24,14 +24,14 @@ vendor: Belkin
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
+  model: Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
   protocol:
   - b
   - g
   - n
 - driver: ath10k
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
+  model: Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
   protocol:
   - a
   - n

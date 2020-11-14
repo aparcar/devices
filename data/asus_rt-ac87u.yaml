@@ -24,14 +24,14 @@ vendor: Asus
 wifi:
 - driver: b43
   freq_ghz: 2.4
-  hardware: Quantenna QT3840BC
+  model: Quantenna QT3840BC
   protocol:
   - b
   - g
   - n
 - driver: b43
   freq_ghz: 5.0
-  hardware: Quantenna QT3840BC
+  model: Quantenna QT3840BC
   protocol:
   - a
   - n

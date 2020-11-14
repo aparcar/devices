@@ -24,14 +24,14 @@ vendor: TP-Link
 wifi:
 - driver: ath10k-ct-smallbuffers
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9880
+  model: Qualcomm Atheros QCA9880
   protocol:
   - b
   - g
   - n
 - driver: ath10k-ct-smallbuffers
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA9880
+  model: Qualcomm Atheros QCA9880
   protocol:
   - a
   - n

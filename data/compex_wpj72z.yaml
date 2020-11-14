@@ -23,14 +23,14 @@ vendor: Compex
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: ALL Compex Atheros WLE200 series mini-PCIe
+  model: ALL Compex Atheros WLE200 series mini-PCIe
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: ALL Compex Atheros WLE200 series mini-PCIe
+  model: ALL Compex Atheros WLE200 series mini-PCIe
   protocol:
   - a
   - n

@@ -24,7 +24,7 @@ vendor: Abicom International
 wifi:
 - driver: ath10k
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA9550
+  model: Qualcomm Atheros QCA9550
   protocol:
   - a
   - n

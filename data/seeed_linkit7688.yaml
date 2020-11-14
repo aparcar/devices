@@ -24,7 +24,7 @@ vendor: MediaTek
 wifi:
 - driver: other
   freq_ghz: 2.4
-  hardware: MediaTek MT7688AN
+  model: MediaTek MT7688AN
   protocol:
   - b
   - g

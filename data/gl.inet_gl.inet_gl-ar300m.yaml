@@ -25,7 +25,7 @@ vendor: GL.iNet
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9531
+  model: Qualcomm Atheros QCA9531
   protocol:
   - b
   - g

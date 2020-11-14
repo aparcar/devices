@@ -23,7 +23,7 @@ vendor: 3Com
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2315A
+  model: Atheros AR2315A
   protocol:
   - b
   - g

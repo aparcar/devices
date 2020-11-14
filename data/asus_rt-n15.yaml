@@ -24,7 +24,7 @@ vendor: Asus
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT2880
+  model: Ralink RT2880
   protocol:
   - b
   - g

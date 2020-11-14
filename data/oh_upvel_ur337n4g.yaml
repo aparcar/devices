@@ -22,7 +22,7 @@ vendor: Upvel
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT3352
+  model: Ralink RT3352
   protocol:
   - b
   - g

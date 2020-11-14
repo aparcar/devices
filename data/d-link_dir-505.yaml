@@ -24,7 +24,7 @@ vendor: D-Link
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR1311
+  model: Atheros AR1311
   protocol:
   - b
   - g

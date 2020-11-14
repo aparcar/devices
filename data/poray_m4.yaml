@@ -22,7 +22,7 @@ vendor: Poray
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT5350F
+  model: Ralink RT5350F
   protocol:
   - b
   - g

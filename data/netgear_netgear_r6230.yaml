@@ -24,14 +24,14 @@ vendor: Netgear
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: MediaTek MT7612EN
+  model: MediaTek MT7612EN
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: MediaTek MT7612EN
+  model: MediaTek MT7612EN
   protocol:
   - a
   - n

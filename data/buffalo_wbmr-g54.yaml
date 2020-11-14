@@ -23,7 +23,7 @@ vendor: Buffalo
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: TI ACX111 (mini-PCI)
+  model: TI ACX111 (mini-PCI)
   protocol:
   - b
   - g

@@ -24,7 +24,7 @@ vendor: Aztech
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT3052F
+  model: Ralink RT3052F
   protocol:
   - b
   - g

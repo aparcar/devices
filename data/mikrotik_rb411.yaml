@@ -23,7 +23,7 @@ vendor: MikroTik
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: 1x mini-PCI
+  model: 1x mini-PCI
   protocol:
   - b
   - g

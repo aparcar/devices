@@ -24,7 +24,7 @@ vendor: Sky
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Broadcom BCM435F
+  model: Broadcom BCM435F
   protocol:
   - b
   - g

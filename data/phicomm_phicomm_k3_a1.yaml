@@ -24,14 +24,14 @@ vendor: PHICOMM
 wifi:
 - driver: broadcom-wl
   freq_ghz: 2.4
-  hardware: Broadcom BCM4366 (PCIe)
+  model: Broadcom BCM4366 (PCIe)
   protocol:
   - b
   - g
   - n
 - driver: broadcom-wl
   freq_ghz: 5.0
-  hardware: Broadcom BCM4366 (PCIe)
+  model: Broadcom BCM4366 (PCIe)
   protocol:
   - a
   - n

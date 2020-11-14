@@ -24,7 +24,7 @@ vendor: D-Link
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT2860v2
+  model: Ralink RT2860v2
   protocol:
   - b
   - g

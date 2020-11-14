@@ -23,7 +23,7 @@ vendor: Belkin
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Airgo (mini-PCI)
+  model: Airgo (mini-PCI)
   protocol:
   - b
   - g

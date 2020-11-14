@@ -24,14 +24,14 @@ vendor: TP-Link
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9982
+  model: Qualcomm Atheros QCA9982
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA9982
+  model: Qualcomm Atheros QCA9982
   protocol:
   - a
   - n

@@ -23,14 +23,14 @@ vendor: Evaluation boards / unbranded boards
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: 2x Atheros AR9380 (mini-PCIe)
+  model: 2x Atheros AR9380 (mini-PCIe)
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: 2x Atheros AR9380 (mini-PCIe)
+  model: 2x Atheros AR9380 (mini-PCIe)
   protocol:
   - a
   - n

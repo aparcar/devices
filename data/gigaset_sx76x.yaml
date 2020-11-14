@@ -24,7 +24,7 @@ vendor: Gigaset
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2414A
+  model: Atheros AR2414A
   protocol:
   - b
   - g

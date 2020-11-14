@@ -24,7 +24,7 @@ vendor: D-Link
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT3352F
+  model: Ralink RT3352F
   protocol:
   - b
   - g

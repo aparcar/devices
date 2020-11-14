@@ -24,7 +24,7 @@ vendor: Airlink101
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT2872
+  model: Ralink RT2872
   protocol:
   - b
   - g

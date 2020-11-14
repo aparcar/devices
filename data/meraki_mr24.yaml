@@ -24,14 +24,14 @@ vendor: Meraki
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9340 (PCIe)
+  model: Atheros AR9340 (PCIe)
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9340 (PCIe)
+  model: Atheros AR9340 (PCIe)
   protocol:
   - a
   - n

@@ -24,12 +24,12 @@ vendor: ADI Engineering
 wifi:
 - driver: ath5k
   freq_ghz: 2.4
-  hardware: EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
+  model: EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
   protocol:
   - b
   - g
 - driver: ath5k
   freq_ghz: 5.0
-  hardware: EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
+  model: EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
   protocol:
   - a

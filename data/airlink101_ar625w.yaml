@@ -22,7 +22,7 @@ vendor: Airlink101
 wifi:
 - driver: mwlwifi
   freq_ghz: 2.4
-  hardware: Marvell
+  model: Marvell
   protocol:
   - b
   - g

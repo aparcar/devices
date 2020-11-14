@@ -28,7 +28,7 @@ video_ports:
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: AMPAK AP6212A
+  model: AMPAK AP6212A
   protocol:
   - b
   - g

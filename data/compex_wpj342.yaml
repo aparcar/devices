@@ -24,14 +24,14 @@ vendor: Compex
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9342 (onboard) + ALL Compex Atheros WLE300 series mini-PCIe
+  model: Atheros AR9342 (onboard) + ALL Compex Atheros WLE300 series mini-PCIe
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9342 (onboard) + ALL Compex Atheros WLE300 series mini-PCIe
+  model: Atheros AR9342 (onboard) + ALL Compex Atheros WLE300 series mini-PCIe
   protocol:
   - a
   - n

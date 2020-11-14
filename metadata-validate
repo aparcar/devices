@@ -60,6 +60,15 @@ if argv[1] == "merge-to-json":
             cpus[cpu_model] = device_data["cpu"]
     Path("form/public/cpus.json").write_text(json.dumps(cpus))
 
+    wifis = {}
+    for device_path in Path("./data/").glob("*.yaml"):
+        device_data = yaml.safe_load(device_path.read_text())
+        for wifi_entry in device_data["wifi"]:
+            wifi_model = wifi_entry.pop("model")
+            if wifi_model not in wifis:
+                wifis[wifi_model] = wifi_entry
+    Path("form/public/wifis.json").write_text(json.dumps(wifis))
+
 else:
     instance_files = []
     instance_path = Path(argv[1])

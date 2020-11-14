@@ -26,7 +26,7 @@ vendor: AVM
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR928 -BL1A
+  model: Atheros AR928 -BL1A
   protocol:
   - b
   - g

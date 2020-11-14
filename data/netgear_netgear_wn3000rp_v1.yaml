@@ -24,7 +24,7 @@ vendor: Netgear
 wifi:
 - driver: none
   freq_ghz: 2.4
-  hardware: Broadcom BCM4329
+  model: Broadcom BCM4329
   protocol:
   - b
   - g

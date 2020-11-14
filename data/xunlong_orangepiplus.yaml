@@ -29,7 +29,7 @@ video_ports:
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Realtek RTL8189ETV
+  model: Realtek RTL8189ETV
   protocol:
   - b
   - g

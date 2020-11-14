@@ -24,7 +24,7 @@ vendor: ALFA Network
 wifi:
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9280 Rev 2
+  model: Atheros AR9280 Rev 2
   protocol:
   - a
   - n

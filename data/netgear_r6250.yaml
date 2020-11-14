@@ -24,14 +24,14 @@ vendor: Netgear
 wifi:
 - driver: b43
   freq_ghz: 2.4
-  hardware: Broadcom BCM4360
+  model: Broadcom BCM4360
   protocol:
   - b
   - g
   - n
 - driver: b43
   freq_ghz: 5.0
-  hardware: Broadcom BCM4360
+  model: Broadcom BCM4360
   protocol:
   - a
   - n

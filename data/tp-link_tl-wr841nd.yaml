@@ -23,7 +23,7 @@ vendor: TP-Link
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: MediaTek MT7628NN
+  model: MediaTek MT7628NN
   protocol:
   - b
   - g

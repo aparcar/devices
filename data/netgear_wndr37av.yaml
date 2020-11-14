@@ -23,14 +23,14 @@ vendor: Netgear
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9223
+  model: Atheros AR9223
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9223
+  model: Atheros AR9223
   protocol:
   - a
   - n

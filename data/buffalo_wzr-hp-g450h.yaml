@@ -25,7 +25,7 @@ vendor: Buffalo
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9300 Rev 3
+  model: Atheros AR9300 Rev 3
   protocol:
   - b
   - g

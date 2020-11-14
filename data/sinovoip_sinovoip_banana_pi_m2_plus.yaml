@@ -29,7 +29,7 @@ video_ports:
 wifi:
 - driver: brcmfmac
   freq_ghz: 2.4
-  hardware: Ampak AP6212
+  model: Ampak AP6212
   protocol:
   - b
   - g

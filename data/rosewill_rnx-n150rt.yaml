@@ -22,7 +22,7 @@ vendor: Rosewill
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR92xx (onboard)
+  model: Atheros AR92xx (onboard)
   protocol:
   - b
   - g

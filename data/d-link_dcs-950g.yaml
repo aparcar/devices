@@ -23,7 +23,7 @@ vendor: D-Link
 wifi:
 - driver: rt2500pci
   freq_ghz: 2.4
-  hardware: Ralink RT2560
+  model: Ralink RT2560
   protocol:
   - b
   - g

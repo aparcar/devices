@@ -24,7 +24,7 @@ vendor: Teltonika
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT3050
+  model: Ralink RT3050
   protocol:
   - b
   - g

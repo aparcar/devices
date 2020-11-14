@@ -25,7 +25,7 @@ vendor: Compex
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9531 + mini-PCIe
+  model: Qualcomm Atheros QCA9531 + mini-PCIe
   protocol:
   - b
   - g

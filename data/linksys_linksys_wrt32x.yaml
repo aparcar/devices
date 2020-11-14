@@ -25,14 +25,14 @@ vendor: Linksys
 wifi:
 - driver: mwlwifi
   freq_ghz: 2.4
-  hardware: Marvell 88W8964
+  model: Marvell 88W8964
   protocol:
   - b
   - g
   - n
 - driver: mwlwifi
   freq_ghz: 5.0
-  hardware: Marvell 88W8964
+  model: Marvell 88W8964
   protocol:
   - a
   - n

@@ -24,14 +24,14 @@ vendor: Xiaomi
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: MediaTek MT7615
+  model: MediaTek MT7615
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: MediaTek MT7615
+  model: MediaTek MT7615
   protocol:
   - a
   - n

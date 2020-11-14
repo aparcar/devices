@@ -24,7 +24,7 @@ vendor: Gainstrong
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9331
+  model: Atheros AR9331
   protocol:
   - b
   - g

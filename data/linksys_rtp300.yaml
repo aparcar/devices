@@ -23,7 +23,7 @@ vendor: Linksys
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9103
+  model: Atheros AR9103
   protocol:
   - b
   - g

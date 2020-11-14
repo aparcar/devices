@@ -29,14 +29,14 @@ video_ports:
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: MediaTek MT6625L
+  model: MediaTek MT6625L
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: MediaTek MT6625L
+  model: MediaTek MT6625L
   protocol:
   - a
   - n

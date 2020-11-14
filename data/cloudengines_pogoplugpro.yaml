@@ -25,7 +25,7 @@ vendor: Pogoplug
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: AW-NE762H PCI(e)
+  model: AW-NE762H PCI(e)
   protocol:
   - b
   - g

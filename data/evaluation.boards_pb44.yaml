@@ -24,14 +24,14 @@ vendor: Evaluation boards / unbranded boards
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: 2x mini-PCI
+  model: 2x mini-PCI
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: 2x mini-PCI
+  model: 2x mini-PCI
   protocol:
   - a
   - n

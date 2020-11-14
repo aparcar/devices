@@ -24,14 +24,14 @@ vendor: Edimax
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT3662F
+  model: Ralink RT3662F
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: Ralink RT3662F
+  model: Ralink RT3662F
   protocol:
   - a
   - n

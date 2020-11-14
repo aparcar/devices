@@ -26,7 +26,7 @@ wifi:
 - detachable_antennas: 2
   driver: unknown
   freq_ghz: 2.4
-  hardware: Quantenna QT3840BC + QT2518B
+  model: Quantenna QT3840BC + QT2518B
   protocol:
   - b
   - g
@@ -34,7 +34,7 @@ wifi:
 - detachable_antennas: 2
   driver: unknown
   freq_ghz: 5.0
-  hardware: Quantenna QT3840BC + QT2518B
+  model: Quantenna QT3840BC + QT2518B
   protocol:
   - a
   - n

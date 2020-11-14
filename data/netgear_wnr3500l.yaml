@@ -22,7 +22,7 @@ vendor: Netgear
 wifi:
 - driver: b43
   freq_ghz: 2.4
-  hardware: Broadcom
+  model: Broadcom
   protocol:
   - b
   - g

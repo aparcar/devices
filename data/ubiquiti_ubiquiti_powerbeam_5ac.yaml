@@ -24,7 +24,7 @@ vendor: Ubiquiti
 wifi:
 - driver: ath10k-ct-smallbuffers
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA988X
+  model: Qualcomm Atheros QCA988X
   protocol:
   - a
   - n

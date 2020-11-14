@@ -21,7 +21,7 @@ vendor: Gateway
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros (mini-PCI)
+  model: Atheros (mini-PCI)
   protocol:
   - b
   - g

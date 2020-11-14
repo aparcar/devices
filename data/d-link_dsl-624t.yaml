@@ -23,7 +23,7 @@ vendor: D-Link
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: TI ACX111 (TNETW1130)
+  model: TI ACX111 (TNETW1130)
   protocol:
   - b
   - g

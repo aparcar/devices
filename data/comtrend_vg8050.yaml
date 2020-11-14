@@ -24,7 +24,7 @@ vendor: Comtrend
 wifi:
 - driver: b43
   freq_ghz: 2.4
-  hardware: Broadcom BCM6362
+  model: Broadcom BCM6362
   protocol:
   - b
   - g

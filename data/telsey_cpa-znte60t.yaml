@@ -24,7 +24,7 @@ vendor: Telsey
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT2661T
+  model: Ralink RT2661T
   protocol:
   - b
   - g

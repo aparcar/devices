@@ -24,7 +24,7 @@ vendor: ZyXEL
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9103 (integrated)
+  model: Atheros AR9103 (integrated)
   protocol:
   - b
   - g

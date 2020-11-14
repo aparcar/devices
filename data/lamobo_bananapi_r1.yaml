@@ -28,7 +28,7 @@ video_ports:
 wifi:
 - driver: rtl819x
   freq_ghz: 2.4
-  hardware: Realtek RTL8192CU
+  model: Realtek RTL8192CU
   protocol:
   - b
   - g

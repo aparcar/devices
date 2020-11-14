@@ -24,14 +24,14 @@ vendor: Creator
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Skyworks SKY85806
+  model: Skyworks SKY85806
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: Skyworks SKY85806
+  model: Skyworks SKY85806
   protocol:
   - a
   - n

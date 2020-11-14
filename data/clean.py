@@ -3,7 +3,7 @@ from pathlib import Path
 
 for f in Path(".").glob("*.yaml"):
     content = yaml.safe_load(f.read_text())
-    #for t in ["phone_ports", "audio_ports", "video_ports"]:
+    # for t in ["phone_ports", "audio_ports", "video_ports"]:
     #    if not t in content:
     #        continue
     #    ports = content[t]

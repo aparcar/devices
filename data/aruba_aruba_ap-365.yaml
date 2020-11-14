@@ -25,14 +25,14 @@ vendor: Aruba
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm IPQ4029
+  model: Qualcomm IPQ4029
   protocol:
   - b
   - g
   - n
 - driver: ath10k
   freq_ghz: 5.0
-  hardware: Qualcomm IPQ4029
+  model: Qualcomm IPQ4029
   protocol:
   - a
   - n

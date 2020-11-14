@@ -23,7 +23,7 @@ vendor: Meraki
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros (integrated)
+  model: Atheros (integrated)
   protocol:
   - b
   - g

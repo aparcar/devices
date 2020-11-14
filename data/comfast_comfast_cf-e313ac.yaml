@@ -24,7 +24,7 @@ vendor: COMFAST
 wifi:
 - driver: ath10k-ct
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA9888
+  model: Qualcomm Atheros QCA9888
   protocol:
   - a
   - n

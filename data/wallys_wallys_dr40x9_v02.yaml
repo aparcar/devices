@@ -22,14 +22,14 @@ vendor: Wallys
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Qualcomm IPQ4019/29
+  model: Qualcomm IPQ4019/29
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: Qualcomm IPQ4019/29
+  model: Qualcomm IPQ4019/29
   protocol:
   - a
   - n

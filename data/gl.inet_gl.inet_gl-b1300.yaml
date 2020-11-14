@@ -24,14 +24,14 @@ vendor: GL.iNet
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros IPQ4028
+  model: Qualcomm Atheros IPQ4028
   protocol:
   - b
   - g
   - n
 - driver: ath10k
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros IPQ4028
+  model: Qualcomm Atheros IPQ4028
   protocol:
   - a
   - n

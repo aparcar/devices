@@ -23,14 +23,14 @@ vendor: Buffalo
 wifi:
 - driver: mwlwifi
   freq_ghz: 2.4
-  hardware: Marvell 88W8363
+  model: Marvell 88W8363
   protocol:
   - b
   - g
   - n
 - driver: mwlwifi
   freq_ghz: 5.0
-  hardware: Marvell 88W8363
+  model: Marvell 88W8363
   protocol:
   - a
   - n

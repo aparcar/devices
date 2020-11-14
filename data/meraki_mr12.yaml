@@ -26,7 +26,7 @@ vendor: Meraki
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR7242
+  model: Atheros AR7242
   protocol:
   - b
   - g

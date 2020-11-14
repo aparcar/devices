@@ -23,7 +23,7 @@ vendor: ADB
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: ''
+  model: ''
   protocol:
   - b
   - g

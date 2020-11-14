@@ -23,14 +23,14 @@ vendor: MikroTik
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: ''
+  model: ''
   protocol:
   - b
   - g
   - n
 - driver: ath10k
   freq_ghz: 5.0
-  hardware: ''
+  model: ''
   protocol:
   - a
   - n

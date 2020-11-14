@@ -25,7 +25,7 @@ vendor: ITian
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT2561T (mini-PCI)
+  model: Ralink RT2561T (mini-PCI)
   protocol:
   - b
   - g

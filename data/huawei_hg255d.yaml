@@ -24,7 +24,7 @@ vendor: Huawei
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT2860
+  model: Ralink RT2860
   protocol:
   - b
   - g

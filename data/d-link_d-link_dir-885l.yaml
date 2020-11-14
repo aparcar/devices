@@ -23,14 +23,14 @@ vendor: D-Link
 wifi:
 - driver: brcmfmac
   freq_ghz: 2.4
-  hardware: Broadcom BCM4366
+  model: Broadcom BCM4366
   protocol:
   - b
   - g
   - n
 - driver: brcmfmac
   freq_ghz: 5.0
-  hardware: Broadcom BCM4366
+  model: Broadcom BCM4366
   protocol:
   - a
   - n

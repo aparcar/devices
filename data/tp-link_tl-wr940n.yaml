@@ -25,7 +25,7 @@ vendor: TP-Link
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros TP9343
+  model: Qualcomm Atheros TP9343
   protocol:
   - b
   - g

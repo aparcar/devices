@@ -24,7 +24,7 @@ vendor: Iomega
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT3090 (mini-PCIe)
+  model: Ralink RT3090 (mini-PCIe)
   protocol:
   - b
   - g

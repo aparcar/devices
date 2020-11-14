@@ -24,7 +24,7 @@ vendor: ZTE
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9271
+  model: Atheros AR9271
   protocol:
   - b
   - g

@@ -23,14 +23,14 @@ vendor: T-Com / Telekom
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: ''
+  model: ''
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: ''
+  model: ''
   protocol:
   - a
   - n

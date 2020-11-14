@@ -24,7 +24,7 @@ vendor: Comtrend
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Broadcom BCM63168
+  model: Broadcom BCM63168
   protocol:
   - b
   - g

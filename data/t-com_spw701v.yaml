@@ -23,7 +23,7 @@ vendor: T-Com / Telekom
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: TI TNETW1350A
+  model: TI TNETW1350A
   protocol:
   - b
   - g

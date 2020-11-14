@@ -23,7 +23,7 @@ vendor: Fon
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2315
+  model: Atheros AR2315
   protocol:
   - b
   - g

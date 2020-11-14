@@ -24,7 +24,7 @@ vendor: TRENDnet
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT3883
+  model: Ralink RT3883
   protocol:
   - b
   - g

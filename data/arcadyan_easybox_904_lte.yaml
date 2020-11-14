@@ -23,14 +23,14 @@ vendor: Arcadyan / Astoria
 wifi:
 - driver: other
   freq_ghz: 2.4
-  hardware: Ralink RT3883
+  model: Ralink RT3883
   protocol:
   - b
   - g
   - n
 - driver: other
   freq_ghz: 5.0
-  hardware: Ralink RT3883
+  model: Ralink RT3883
   protocol:
   - a
   - n

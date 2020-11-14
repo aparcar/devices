@@ -24,7 +24,7 @@ vendor: TP-Link
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9341
+  model: Atheros AR9341
   protocol:
   - b
   - g

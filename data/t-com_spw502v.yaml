@@ -24,12 +24,12 @@ vendor: T-Com / Telekom
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2417
+  model: Atheros AR2417
   protocol:
   - b
   - g
 - driver: unknown
   freq_ghz: 5.0
-  hardware: Atheros AR2417
+  model: Atheros AR2417
   protocol:
   - a

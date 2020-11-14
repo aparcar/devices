@@ -24,7 +24,7 @@ vendor: Baidu
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: (onboard)
+  model: (onboard)
   protocol:
   - b
   - g

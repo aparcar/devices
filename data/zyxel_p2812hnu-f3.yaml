@@ -24,7 +24,7 @@ vendor: ZyXEL
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT3062
+  model: Ralink RT3062
   protocol:
   - b
   - g

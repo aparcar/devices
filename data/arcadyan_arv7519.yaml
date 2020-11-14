@@ -26,7 +26,7 @@ vendor: Arcadyan / Astoria
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Lantiq XWAY WAVE300
+  model: Lantiq XWAY WAVE300
   protocol:
   - b
   - g

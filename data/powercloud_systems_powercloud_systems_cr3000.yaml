@@ -25,7 +25,7 @@ vendor: PowerCloud Systems
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR1321 (detects as AR9340 rev 1)
+  model: Atheros AR1321 (detects as AR9340 rev 1)
   protocol:
   - b
   - g

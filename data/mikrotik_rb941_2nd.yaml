@@ -24,7 +24,7 @@ vendor: MikroTik
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9533
+  model: Qualcomm Atheros QCA9533
   protocol:
   - b
   - g

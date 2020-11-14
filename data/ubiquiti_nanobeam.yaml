@@ -23,7 +23,7 @@ vendor: Ubiquiti
 wifi:
 - driver: unknown
   freq_ghz: 5.0
-  hardware: Atheros AR9342
+  model: Atheros AR9342
   protocol:
   - a
   - n

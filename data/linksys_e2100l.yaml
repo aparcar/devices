@@ -24,7 +24,7 @@ vendor: Linksys
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9130
+  model: Atheros AR9130
   protocol:
   - b
   - g

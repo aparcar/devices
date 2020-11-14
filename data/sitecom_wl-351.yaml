@@ -24,7 +24,7 @@ vendor: Sitecom
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT2800pci
+  model: Ralink RT2800pci
   protocol:
   - b
   - g

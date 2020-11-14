@@ -22,14 +22,14 @@ vendor: T-Com / Telekom
 wifi:
 - driver: rt2800pci
   freq_ghz: 2.4
-  hardware: Ralink RT2860T
+  model: Ralink RT2860T
   protocol:
   - b
   - g
   - n
 - driver: rt2800pci
   freq_ghz: 5.0
-  hardware: Ralink RT2860T
+  model: Ralink RT2860T
   protocol:
   - a
   - n

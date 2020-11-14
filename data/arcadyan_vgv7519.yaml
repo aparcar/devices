@@ -24,7 +24,7 @@ vendor: Arcadyan / Astoria
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT5362F
+  model: Ralink RT5362F
   protocol:
   - b
   - g

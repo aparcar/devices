@@ -23,7 +23,7 @@ vendor: Cisco
 wifi:
 - driver: b43
   freq_ghz: 5.0
-  hardware: Broadcom BCM4717
+  model: Broadcom BCM4717
   protocol:
   - a
   - n

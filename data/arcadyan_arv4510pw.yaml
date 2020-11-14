@@ -24,7 +24,7 @@ vendor: Arcadyan / Astoria
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: mini-PCI
+  model: mini-PCI
   protocol:
   - b
   - g

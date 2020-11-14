@@ -24,7 +24,7 @@ wifi:
 - detachable_antennas: 2
   driver: ath10k-ct
   freq_ghz: 2.4
-  hardware: ''
+  model: ''
   protocol:
   - b
   - g
@@ -32,7 +32,7 @@ wifi:
 - detachable_antennas: 2
   driver: ath10k-ct
   freq_ghz: 5.0
-  hardware: ''
+  model: ''
   protocol:
   - a
   - n

@@ -26,7 +26,7 @@ vendor: AVM
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9227
+  model: Atheros AR9227
   protocol:
   - b
   - g

@@ -23,7 +23,7 @@ vendor: Linksys
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR5416 (mini-PCI)
+  model: Atheros AR5416 (mini-PCI)
   protocol:
   - b
   - g

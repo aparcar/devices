@@ -23,7 +23,7 @@ vendor: Ubiquiti
 wifi:
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9280 + AN950 PA
+  model: Atheros AR9280 + AN950 PA
   protocol:
   - a
   - n

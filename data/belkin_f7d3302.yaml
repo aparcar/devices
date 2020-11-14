@@ -23,7 +23,7 @@ vendor: Belkin
 wifi:
 - driver: b43
   freq_ghz: 2.4
-  hardware: Broadcom (integrated)
+  model: Broadcom (integrated)
   protocol:
   - b
   - g

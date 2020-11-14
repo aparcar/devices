@@ -24,14 +24,14 @@ vendor: MikroTik
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9342-BL1A
+  model: Atheros AR9342-BL1A
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9342-BL1A
+  model: Atheros AR9342-BL1A
   protocol:
   - a
   - n

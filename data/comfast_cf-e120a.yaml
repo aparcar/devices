@@ -24,7 +24,7 @@ vendor: COMFAST
 wifi:
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9340 Rev
+  model: Atheros AR9340 Rev
   protocol:
   - a
   - n

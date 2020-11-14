@@ -24,7 +24,7 @@ vendor: AsiaRF
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT5350
+  model: Ralink RT5350
   protocol:
   - b
   - g

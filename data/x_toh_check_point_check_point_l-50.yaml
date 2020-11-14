@@ -24,7 +24,7 @@ vendor: Check Point
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9287 (mini-PCIe)
+  model: Atheros AR9287 (mini-PCIe)
   protocol:
   - b
   - g

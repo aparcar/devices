@@ -23,7 +23,7 @@ vendor: D-Link
 wifi:
 - driver: ath5k
   freq_ghz: 2.4
-  hardware: Atheros AR2317
+  model: Atheros AR2317
   protocol:
   - b
   - g

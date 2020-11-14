@@ -24,7 +24,7 @@ vendor: Arcadyan / Astoria
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2417
+  model: Atheros AR2417
   protocol:
   - b
   - g

@@ -24,7 +24,7 @@ vendor: Allnet
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9285
+  model: Atheros AR9285
   protocol:
   - b
   - g

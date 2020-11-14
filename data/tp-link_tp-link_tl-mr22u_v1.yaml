@@ -23,7 +23,7 @@ vendor: TP-Link
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA9531
+  model: Qualcomm Atheros QCA9531
   protocol:
   - b
   - g

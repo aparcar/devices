@@ -25,7 +25,7 @@ vendor: Qxwlan
 wifi:
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9344
+  model: Atheros AR9344
   protocol:
   - a
   - n

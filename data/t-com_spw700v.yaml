@@ -23,7 +23,7 @@ vendor: T-Com / Telekom
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2413
+  model: Atheros AR2413
   protocol:
   - b
   - g

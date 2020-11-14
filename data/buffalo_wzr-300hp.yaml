@@ -23,7 +23,7 @@ vendor: Buffalo
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR9283
+  model: Atheros AR9283
   protocol:
   - b
   - g

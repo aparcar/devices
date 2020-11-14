@@ -23,7 +23,7 @@ vendor: Netgear
 wifi:
 - driver: mwlwifi
   freq_ghz: 2.4
-  hardware: Gemtek WMIM-205GN mini-PCI Marvell 88W8361
+  model: Gemtek WMIM-205GN mini-PCI Marvell 88W8361
   protocol:
   - b
   - g

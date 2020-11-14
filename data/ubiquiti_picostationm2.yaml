@@ -22,7 +22,7 @@ vendor: Ubiquiti
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR7240
+  model: Atheros AR7240
   protocol:
   - b
   - g

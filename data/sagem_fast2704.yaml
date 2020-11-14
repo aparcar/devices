@@ -24,7 +24,7 @@ vendor: Sagem
 wifi:
 - driver: brcmsmac
   freq_ghz: 2.4
-  hardware: Broadcom BCM43225
+  model: Broadcom BCM43225
   protocol:
   - b
   - g

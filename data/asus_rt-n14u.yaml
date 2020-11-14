@@ -24,7 +24,7 @@ vendor: Asus
 wifi:
 - driver: mt76
   freq_ghz: 2.4
-  hardware: MediaTek MT7620N
+  model: MediaTek MT7620N
   protocol:
   - b
   - g

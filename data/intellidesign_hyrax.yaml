@@ -23,7 +23,7 @@ vendor: Intellidesign
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: CSR WF111
+  model: CSR WF111
   protocol:
   - b
   - g

@@ -23,7 +23,7 @@ vendor: AirTies
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT2527L
+  model: Ralink RT2527L
   protocol:
   - b
   - g

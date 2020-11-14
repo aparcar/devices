@@ -24,14 +24,14 @@ vendor: Buffalo
 wifi:
 - driver: mt76
   freq_ghz: 2.4
-  hardware: Ralink RT5592
+  model: Ralink RT5592
   protocol:
   - b
   - g
   - n
 - driver: mt76
   freq_ghz: 5.0
-  hardware: Ralink RT5592
+  model: Ralink RT5592
   protocol:
   - a
   - n

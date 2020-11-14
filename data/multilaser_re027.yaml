@@ -22,7 +22,7 @@ vendor: Multilaser
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR92xx
+  model: Atheros AR92xx
   protocol:
   - b
   - g

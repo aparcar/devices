@@ -22,14 +22,14 @@ vendor: Turris CZ.NIC
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: 2x mini-PCIe
+  model: 2x mini-PCIe
   protocol:
   - b
   - g
   - n
 - driver: unknown
   freq_ghz: 5.0
-  hardware: 2x mini-PCIe
+  model: 2x mini-PCIe
   protocol:
   - a
   - n

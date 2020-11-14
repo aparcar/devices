@@ -24,14 +24,14 @@ vendor: Ubiquiti
 wifi:
 - driver: ath10k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA988X
+  model: Qualcomm Atheros QCA988X
   protocol:
   - b
   - g
   - n
 - driver: ath10k
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA988X
+  model: Qualcomm Atheros QCA988X
   protocol:
   - a
   - n

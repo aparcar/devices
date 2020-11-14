@@ -21,7 +21,7 @@ vendor: ZyXEL
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Ralink RT5392
+  model: Ralink RT5392
   protocol:
   - b
   - g

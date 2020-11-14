@@ -23,14 +23,14 @@ vendor: Vizio
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Atheros AR9227
+  model: Atheros AR9227
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Atheros AR9227
+  model: Atheros AR9227
   protocol:
   - a
   - n

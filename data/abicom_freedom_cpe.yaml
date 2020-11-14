@@ -23,12 +23,12 @@ vendor: Abicom International
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR5312
+  model: Atheros AR5312
   protocol:
   - b
   - g
 - driver: unknown
   freq_ghz: 5.0
-  hardware: Atheros AR5312
+  model: Atheros AR5312
   protocol:
   - a

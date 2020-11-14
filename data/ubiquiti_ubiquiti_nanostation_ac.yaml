@@ -24,14 +24,14 @@ vendor: Ubiquiti
 wifi:
 - driver: ath9k
   freq_ghz: 2.4
-  hardware: Qualcomm Atheros QCA899X
+  model: Qualcomm Atheros QCA899X
   protocol:
   - b
   - g
   - n
 - driver: ath9k
   freq_ghz: 5.0
-  hardware: Qualcomm Atheros QCA899X
+  model: Qualcomm Atheros QCA899X
   protocol:
   - a
   - n

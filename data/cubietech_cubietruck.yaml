@@ -29,7 +29,7 @@ video_ports:
 wifi:
 - driver: brcmfmac
   freq_ghz: 2.4
-  hardware: Broadcom BCM4329
+  model: Broadcom BCM4329
   protocol:
   - b
   - g

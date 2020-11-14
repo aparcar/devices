@@ -23,7 +23,7 @@ vendor: AVM
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: ac111 on-board
+  model: ac111 on-board
   protocol:
   - b
   - g

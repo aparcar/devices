@@ -24,7 +24,7 @@ vendor: Actiontec
 wifi:
 - driver: unknown
   freq_ghz: 2.4
-  hardware: Atheros AR2413 (mini-PCI)
+  model: Atheros AR2413 (mini-PCI)
   protocol:
   - b
   - g

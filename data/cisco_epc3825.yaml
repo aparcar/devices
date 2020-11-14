@@ -22,7 +22,7 @@ vendor: Cisco
 wifi:
 - driver: brcmsmac
   freq_ghz: 2.4
-  hardware: Broadcom BCM43225 (mini-PCIe)
+  model: Broadcom BCM43225 (mini-PCIe)
   protocol:
   - b
   - g
