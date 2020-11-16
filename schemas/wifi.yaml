@@ -1,18 +1,18 @@
 $id: https://openwrt.org/schema/wifi.yaml
 title: WiFi module
-description: WiFi hardware description
+description: WiFi model description
 type: object
 
 required:
   - freq_ghz
-  - hardware
+  - model
   - driver
 
 examples:
   - driver: unknown
     freq_ghz: 2.4
     detachable_antennas: 2
-    hardware: Atheros AR2315
+    model: Atheros AR2315
 
 properties:
   freq_ghz:
@@ -49,8 +49,8 @@ properties:
       - rtl8xxxu
       - unknown
 
-  hardware:
-    title: WiFi hardware
+  model:
+    title: WiFi model
     type: string
 
   version:
