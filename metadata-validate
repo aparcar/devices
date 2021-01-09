@@ -63,7 +63,7 @@ if argv[1] == "merge-to-json":
     wifis = {}
     for device_path in Path("./data/").glob("*.yaml"):
         device_data = yaml.safe_load(device_path.read_text())
-        for wifi_entry in device_data["wifi"]:
+        for wifi_entry in device_data.get("wifi", []):
             wifi_model = wifi_entry.pop("model")
             if wifi_model not in wifis:
                 wifis[wifi_model] = wifi_entry
