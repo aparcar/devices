@@ -40,6 +40,6 @@ properties:
     description: One of multiple possible storage variants
     type: boolean
 
-  hardware:
-    title: Hardware
+  model:
+    title: Model
     type: string
