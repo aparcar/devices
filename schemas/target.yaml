@@ -87,6 +87,7 @@ enum:
   - ramips/rt288x
   - ramips/rt305x
   - ramips/rt3883
+  - realtek/generic
   - rockchip/armv8
   - rtl838x/generic
   - sunxi/cortexa53

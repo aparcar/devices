@@ -1,0 +1,28 @@
+vendor: ZyXEL
+model: GS1900-8HP
+variant: v1
+
+target:
+- realtek/generic
+
+cpu:
+  cores: 1
+  mhz: 500
+  model: Realtek RTL8380M
+
+storage:
+- size_mb: 16
+  type: unknown
+  model: Macronix MX25L12835F
+
+memory:
+- size_mb: 128
+  type: DDR2
+  model: Nanya NT5TU128M8HE-AC
+
+ethernet:
+- port_count: 8
+  speed_mbit: 1000
+
+bootloader: U-Boot
+device_type: Switch
