@@ -23,4 +23,4 @@ jobs:
 
     - name: Test metadata
       run: |
-        ./metadata-validate ./data
+        ./validate ./data
