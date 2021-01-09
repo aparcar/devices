@@ -11,8 +11,9 @@ enum:
   - Range Extender
   - Router
   - Single Board Computer
-  - Travel Router - Battery powered
+  - Switch
   - Travel Router
+  - Travel Router - Battery powered
   - WiFi AP
   - WiFi Router
   - other
