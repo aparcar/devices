@@ -8,7 +8,7 @@ required:
   - model
   - target
   - cpu
-  - memory_mb
+  - memory
   - storage
 
 examples:
@@ -30,7 +30,7 @@ examples:
       - function: status
         color: red
     jtag: false
-    memory_mb:
+    memory:
       - 16
     model: La Fonera
     variant: v1
@@ -88,13 +88,14 @@ properties:
       $ref: file:target.yaml
     minItems: 1
 
-  memory_mb:
-    title: Memory in MegaByte
-    description: If multiple variants exists add multiple entries
+  memory:
+    title: Memory (RAM)
+    description: Memory available in device. If multiple variants exists add
+      multiple entries
     type: array
-    minItems: 1
     items:
-      type: number
+      $ref: file:memory.yaml
+    minItems: 1
 
   storage:
     title: Storage

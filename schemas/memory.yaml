@@ -1,0 +1,30 @@
+$id: https://openwrt.org/schema/memory.yaml
+$schema: http://json-schema.org/draft-07/schema
+title: Memory (RAM)
+description: Memory available on device
+type: object
+
+required:
+  - type
+
+examples:
+  - size_mb: 40
+    type: NOR
+
+properties:
+  size_mb:
+    description: Size of the memory in MegaByte
+    title: Size
+    type: number
+    minimum: 1
+
+  type:
+    title: Type
+    type: string
+    enum:
+      - DDR2
+      - DDR3
+
+  model:
+    title: Model
+    type: string
