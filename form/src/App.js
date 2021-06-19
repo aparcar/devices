@@ -4,13 +4,30 @@ import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
+import Select from 'react-select';
 const yaml = require("js-yaml");
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
   const [formData, setFormData] = React.useState({});
+
+
+
+  const CustomSelect = function(props){
+    
+    return(
+      <Select id="input"
+      options={props.options.enumOptions}
+      onChange={(e) => console.log(e)}
+      >
+      </Select>
+    )
+  }
+  const widgets = {
+    SelectWidget: CustomSelect
+  }
+
 
   const showModal = () => {
     setIsOpen(true);
@@ -26,12 +43,19 @@ function App() {
     showModal();
   };
 
-  fetch("schema.json")
+
+  fetch("schema.json",      { headers : { 
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+   }})
     .then((response) => response.json())
     .then((schema) => {
       render(
         <>
-          <Form schema={schema} onSubmit={onSubmit} formData={formData} />
+          <Form schema={schema} 
+                widgets={widgets}  
+                onSubmit={onSubmit} 
+                formData={formData} />
         </>,
         document.getElementById("form")
       );
