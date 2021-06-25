@@ -13,8 +13,8 @@ function App() {
   function useForceUpdate(){
     const [value, setValue] = React.useState(0);
     console.log(value);
-    // integer state
-    return () => setValue(value => value + 1); // update the state to force render
+   
+    return () => setValue(value => value + 1); 
 }
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
