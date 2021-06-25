@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { render } from "react-dom";
 import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
@@ -11,14 +11,16 @@ const yaml = require("js-yaml");
 function App() {
 
   function useForceUpdate(){
-    const [value, setValue] = React.useState(0); // integer state
+    const [value, setValue] = React.useState(0);
+    console.log(value);
+    // integer state
     return () => setValue(value => value + 1); // update the state to force render
 }
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
   const [formData, setFormData] = React.useState();
 
-  const wifis = require("./wifis.json");
+
   const cpus = require("./cpus.json")
   const CustomSelect = function (props) {
     return (
