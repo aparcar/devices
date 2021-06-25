@@ -52,6 +52,265 @@ properties:
   model:
     title: WiFi model
     type: string
+    enum:
+      - Qualcomm Atheros QCA9880
+      - Broadcom BCM5358
+      - Atheros AR9331
+      - MediaTek MT7615
+      - Atheros AR9287
+      - Quantenna QT3840BC + QT2518B
+      - Broadcom BCM43a2
+      - Broadcom BCM4360
+      - Qualcomm Atheros QCA9563
+      - Atheros AR9340 (PCIe)
+      - Qualcomm Atheros QCA9533
+      - Atheros AR9223
+      - Atheros AR9220
+      - Broadcom BCM43362
+      - MediaTek MT7615E
+      - Gemtek WMIM-205GN mini-PCI Marvell 88W8361
+      - Ralink RT3050F integrated RT3572L via non-standard USB 2.0
+      - MediaTek MT7612EN
+      - mini-PCI
+      - Atheros AR2413
+      - Qualcomm Atheros QCA9531
+      - Atheros AR9580
+      - Ralink RT5350
+      - Broadcom BCM6361
+      - Atheros AR92xx
+      - Marvell 88W8864
+      - Broadcom BCM4321
+      - Broadcom BCM435F
+      - Broadcom BCM4318
+      - Atheros AR9380
+      - Qualcomm Atheros QCA9887
+      - Ralink RT3052F
+      - Qualcomm IPQ4019
+      - Atheros AR9381
+      - Realtek RTL8189ETV
+      - MediaTek MT7615N
+      - Qualcomm Atheros IPQ4028
+      - Broadcom BCM4318 (onboard)
+      - Atheros AR9382 mini-PCIe
+      - Ralink RT3052
+      - MediaTek MT7620A
+      - Skyworks SKY85806
+      - MediaTek MT7628AN
+      - MediaTek MT7612E
+      - Qualcomm Atheros QCA9888
+      - MediaTek MT7628A
+      - Atheros AR9340 Rev
+      - Ralink RT3050
+      - Broadcom BCM43222KFBG
+      - 2x Marvell 88W8366
+      - Broadcom BCM4718
+      - Qualcomm Atheros TP9343
+      - MediaTek MT7620N
+      - Atheros AR9271
+      - Broadcom BCM5358UB0
+      - Ralink RT3062F
+      - MediaTek MT728NN
+      - Broadcom BCM43225
+      - Qualcomm Atheros QCA9886
+      - MediaTek MT7688AN
+      - Atheros AR9340
+      - Ralink RT5350F
+      - Broadcom BCM47186B0
+      - Broadcom BCM4322
+      - Atheros AR2417
+      - Qualcomm Atheros IPQ4018
+      - Atheros AR9285
+      - Atheros AR9300 Rev 3
+      - Qualcomm IPQ4018
+      - Broadcom BCM43225 (mini-PCIe)
+      - Broadcom BCM435f
+      - Broadcom BCM43222
+      - Qualcomm Atheros QCA9984
+      - Broadcom BCM435f; Quantenna QT3740BC
+      - Atheros AR9341
+      - Atheros AR9344
+      - 2x Broadcom BCM4360
+      - Ralink RT3062
+      - Lantiq XWAY WAVE300
+      - Broadcom (cardbus)
+      - Atheros AR9280
+      - Atheros AR9227
+      - AMPAK AP6212A
+      - Broadcom
+      - Atheros AR2414A
+      - Atheros AR9130
+      - Qualcomm Atheros QCA9984 x2
+      - Atheros AR5416
+      - (onboard)
+      - Ralink RT2860v2
+      - Quantenna QT3840BC
+      - Atheros AR9382
+      - Broadcom BCM43217 (mini-PCIe)
+      - Intersil Prism (mini-PCI)
+      - Atheros AR9160
+      - Broadcom BCM4716
+      - Atheros AR2112A
+      - Broadcom BCM4329
+      - Atheros
+      - Broadcom (integrated)
+      - Ralink RT3352F
+      - Realtek RTL8192CU
+      - Ralink RT2661T
+      - Broadcom BCM4318 (mini-PCI)
+      - Qualcomm Atheros QCA9880-BR4A
+      - Broadcom BCM5357B0
+      - Atheros AR9280 Rev 2
+      - Atheros AR2413 (mini-PCI)
+      - Ralink RT2800
+      - Broadcom BCM5354
+      - Atheros AR9558 (onboard) + ALL Compex Atheros WLE300 series mini-PCIe
+      - Atheros AR9103
+      - Atheros AR9132
+      - ALL Compex Atheros WLM200 series mini-PCI
+      - Atheros AR1311
+      - Ralink RT2880
+      - Broadcom BCM5357
+      - Ralink RT3050F
+      - ALL Compex Atheros WLE200 series mini-PCIe
+      - Broadcom BCM43227
+      - Atheros AR9342
+      - Broadcom BCM4366 (PCIe)
+      - Broadcom BCM5352E
+      - Atheros AR5416 (mini-PCI)
+      - Atheros (integrated)
+      - Atheros AR9590
+      - Airgo (mini-PCI)
+      - AW-NE762H PCI(e)
+      - Broadcom BCM4321 (mini-PCI)
+      - Qualcomm Atheros QCA9558
+      - Broadcom BCM43217
+      - Atheros AR2317
+      - Qualcomm Atheros QCA9882
+      - Broadcom BCM4306
+      - Qualcomm Atheros QCA9556
+      - Qualcomm Atheros QCA9580
+      - Ralink RT2860
+      - Qualcomm Atheros QCA988x
+      - Qualcomm Atheros QCA9561
+      - Broadcom BCM4331
+      - Qualcomm QCA988x
+      - Ralink RT3090 (mini-PCIe)
+      - Ralink RT5362F
+      - Qualcomm Atheros QCA9982
+      - Broadcom BCM4352
+      - TI TNETW1350A
+      - Atheros (mini-PCI)
+      - Atheros AR9531
+      - Qualcomm Atheros IPQ4019
+      - Broadcom BCM5350
+      - depending on model
+      - Broadcom BCM4322 (onboard) unpopulated mini-PCI slot
+      - Ralink RT5392
+      - Broadcom BCM43520
+      - Broadcom BCM4322 (mini-PCI or onboard)
+      - Atheros AR7240
+      - Atheros AR9287 (mini-PCIe)
+      - Broadcom BCM5357C0
+      - Qualcomm Atheros QCA899X
+      - Atheros AR9582
+      - Ralink WiSOC
+      - Atheros AR9280 + AN950 PA
+      - Ralink RT3662F
+      - Broadcom BCM6362
+      - TI ACX111 (TNETW1130)
+      - Ralink (integrated)
+      - Atheros AR5312
+      - Atheros AR928 -BL1A
+      - 2x Atheros AR5413 (mini-PCI)
+      - Ralink RT2860T
+      - Ralink RT2561T (mini-PCI)
+      - Qualcomm IPQ4019/29
+      - Marvell 88W8964
+      - Qualcomm QCA988X
+      - Broadcom BCM47186
+      - Atheros AR1321 (detects as AR9340 rev 1)
+      - Ralink RT3352
+      - Marvell
+      - Qualcomm Atheros QCA988X
+      - Atheros AR9283
+      - Atheros AR92xx (onboard)
+      - Broadcom BCM5352
+      - Broadcom BCM4717
+      - Qualcomm Atheros QCA9882-2R4E
+      - Atheros AR9287-BL1A
+      - Broadcom BCM43236
+      - Qualcomm Atheros QCA986x/988x mini-PCIe
+      - MediaTek MT7610EN
+      - Atheros AR7242
+      - MediaTek MT7615D
+      - Atheros AR9330
+      - Ralink RT5592EP
+      - Atheros AR2313
+      - Ralink RT2561 (mini-PCI)
+      - Ralink RT2800pci
+      - MediaTek MT7628N
+      - Broadcom BCM63168
+      - Atheros AR2315
+      - MediaTek MT76x8AN
+      - Broadcom BCM4704
+      - Ralink RT3883
+      - Broadcom BCM432a
+      - Atheros AR9287 (onboard)
+      - Qualcomm QCA9880-BR4A (Senao PCE4553AH)
+      - MediaTek MT7628NN
+      - Ralink RT2872
+      - Broadcom BCM4318 rev. 13
+      - 2x mini-PCI
+      - Marvell 88W8363
+      - Broadcom BCM5356
+      - Ralink RT3070L
+      - ac111 on-board
+      - Atheros AR9102
+      - Qualcomm Atheros QCA9550
+      - Broadcom BCM43228
+      - Ampak AP6212
+      - TI ACX111 (integrated)
+      - Broadcom BCM4306 (mini-PCI)
+      - 2x Qualcomm Atheros QCA9980
+      - Broadcom BCM6358
+      - Broadcom BCM43222 (mini-PCI)
+      - Broadcom BCM432c (mini-PCI)
+      - Ralink RT3662
+      - 2x Atheros AR9380 (mini-PCIe)
+      - Broadcom BCM43602
+      - Ralink RT2561
+      - Qualcomm Atheros QCA9531 + mini-PCIe
+      - Ralink RT2820
+      - 1x mini-PCI
+      - Qualcomm Atheros QCA9880-2R4E (mini-PCIe)
+      - Broadcom BCM4320 (mini-PCI)
+      - Atheros AR9106
+      - Atheros AR9350
+      - Atheros AR2315A
+      - Atheros AR9342 (onboard) + ALL Compex Atheros WLE300 series mini-PCIe
+      - Ralink RT305x
+      - Qualcomm Atheros QCA9980
+      - QCA988X v2
+      - TI ACX111 (mini-PCI)
+      - Atheros AR9342-BL1A
+      - Atheros AR9103 (integrated)
+      - Qualcomm Atheros QCA4019
+      - Qualcomm IPQ4029
+      - Atheros AR7241
+      - EnGenius NMP-8602 PLUS Atheros AR5414 mini-PCI
+      - Broadcom BCM4318 rev. 9 (mini-PCI)
+      - Ralink RT5592
+      - MediaTek MT6625L
+      - Qualcomm Atheros QCA9882-BR4A
+      - Broadcom BCM4301 (mini-PCI)
+      - CSR WF111
+      - Ralink RT3060F
+      - Ralink RT2560
+      - Broadcom BCM4366
+      - Ralink RT2527L
+      - 2x mini-PCIe
+      - Qualcomm Atheros QCA9880v2
+      - Broadcom BCM4313
 
   version:
     title: WiFi Alliance Version
