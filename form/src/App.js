@@ -5,23 +5,19 @@ import Modal from "react-bootstrap/Modal";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Select from "react-select";
+import logo from "./images/logo.png"
+import './App.css'
 
 const yaml = require("js-yaml");
 
 function App() {
 
-  function useForceUpdate(){
-    const [value, setValue] = React.useState(0);
-    console.log(value);
-   
-    return () => setValue(value => value + 1); 
-}
+
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
   const [formData, setFormData] = React.useState();
 
 
-  const cpus = require("./cpus.json")
   const CustomSelect = function (props) {
     return (
       <Select
@@ -56,7 +52,7 @@ function App() {
     setContent(yaml.safeDump(formData, { skipInvalid: true }));
     showModal();
   };
-  const forceUpdate = useForceUpdate();
+ 
   fetch("schema.json", {
     headers: {
       "Content-Type": "application/json",
@@ -71,22 +67,8 @@ function App() {
             key={formData}
             schema={schema}
             onSubmit={onSubmit}
-            liveValidate={true}
             formData={formData}
             widgets={widgets}
-            onChange={async (e) => {
-              
-              var fd = e.formData
-              if(fd.cpu.model){
-                var model = fd.cpu.model
-                
-                fd.cpu["cores"] = cpus[model].cores
-                fd.cpu["mhz"] = cpus[model].mhz
-              }
-              setFormData(fd);
-              console.log(fd, e.formData)
-              forceUpdate()
-            }}
           />
         </>,
         document.getElementById("form")
@@ -94,16 +76,18 @@ function App() {
     });
   return (
     <>
-      <Navbar bg="primary" variant="dark">
-        <Navbar.Brand href="#home">OpenWrt Device Form</Navbar.Brand>
-        <Nav className="mr-auto">
+      <Navbar variant="dark">
+      <Nav>
+        <Navbar.Brand href="#home"><img src={logo} alt="logo"></img></Navbar.Brand>
+        </Nav>
+        <Nav className="mr-0" >
           <Nav.Link href="https://github.com/aparcar/devices/tree/main/form">
             Source Code
           </Nav.Link>
           <Nav.Link href="schema_doc.html">Schema</Nav.Link>
         </Nav>
       </Navbar>
-      <div id="form">
+      <div className="container" id="form">
         <p> Loading schemas...</p>
       </div>
       <Modal show={isOpen} onHide={hideModal}>
