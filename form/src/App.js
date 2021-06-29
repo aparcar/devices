@@ -4,7 +4,7 @@ import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
+import Select from "react-select";
 const yaml = require("js-yaml");
 
 function App() {
@@ -26,12 +26,39 @@ function App() {
     showModal();
   };
 
-  fetch("schema.json")
+  const CustomSelect = function (props) {
+    
+    return (
+      <Select
+        id="input"
+        className="basic-single"
+        classNamePrefix="select"
+        options={props.options.enumOptions}
+        placeholder={props.label}
+        isSearchable={true}
+        onChange={async (e) => {
+          await props.onChange(e.value);
+        }}
+      ></Select>
+    );
+  };
+  
+  const widgets = {
+    SelectWidget: CustomSelect,
+  };
+
+ 
+  fetch("schema.json", {
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  })
     .then((response) => response.json())
     .then((schema) => {
       render(
         <>
-          <Form schema={schema} onSubmit={onSubmit} formData={formData} />
+          <Form schema={schema} onSubmit={onSubmit} formData={formData} widgets={widgets}/>
         </>,
         document.getElementById("form")
       );
