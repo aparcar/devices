@@ -1,15 +1,24 @@
 a{
   text-decoration: none;
 }
-nav.navbar.navbar-expand.navbar-dark{
+
+a:hover{
+  text-decoration: none;
+}
+nav.navbar.navbar-expand {
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 25%);
   margin-bottom: 2rem;
-  padding: 0rem 3.5rem;
-  background-color: #152c49;
+  padding: 0.5rem 3.5rem;
 }
 
 .mr-0.navbar-nav {
+  font-weight: bold;
   position: absolute;
   right: 3.5rem;
+  margin-top: 0.4rem;
+}
+.logo{
+  height: 3.5rem;
 }
 
 .btn.btn-primary{
