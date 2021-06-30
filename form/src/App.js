@@ -5,6 +5,9 @@ import Modal from "react-bootstrap/Modal";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Select from "react-select";
+import logo from "./images/logo.png";
+import "./App.css"
+
 const yaml = require("js-yaml");
 
 function App() {
@@ -65,18 +68,18 @@ function App() {
     });
   return (
     <>
-      <Navbar bg="primary" variant="dark">
-        <Navbar.Brand href="#home">OpenWrt Device Form</Navbar.Brand>
-        <Nav className="mr-auto">
+      <Navbar variant="dark">
+      <Nav>
+        <Navbar.Brand href="#home"><img src={logo} alt="logo"></img></Navbar.Brand>
+        </Nav>
+        <Nav className="mr-0" >
           <Nav.Link href="https://github.com/aparcar/devices/tree/main/form">
             Source Code
           </Nav.Link>
-          <Nav.Link href="schema_doc.html">
-            Schema
-          </Nav.Link>
+          <Nav.Link href="schema_doc.html">Schema</Nav.Link>
         </Nav>
       </Navbar>
-      <div id="form">
+      <div id="form" className="container form">
         <p> Loading schemas...</p>
       </div>
       <Modal show={isOpen} onHide={hideModal}>
@@ -87,7 +90,7 @@ function App() {
           <pre>{content}</pre>
         </Modal.Body>
         <Modal.Footer>
-          <button onClick={hideModal}>Cancel</button> <button> Save </button>
+        <p className="button" onClick={hideModal}>Cancel</p> <p className="button" href="#" download="Data.yaml" type="text/yaml">Save</p>
         </Modal.Footer>
       </Modal>
     </>
