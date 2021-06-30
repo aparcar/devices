@@ -7,7 +7,6 @@ import Nav from "react-bootstrap/Nav";
 import Select from "react-select";
 import logo from "./images/logo.png";
 import "./App.css"
-
 const yaml = require("js-yaml");
 
 function App() {
