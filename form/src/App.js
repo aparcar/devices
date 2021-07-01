@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { render } from "react-dom";
 import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Select from "react-select";
 import logo from "./images/logo.png";
-import "./App.css"
+import "./App.css";
 
 const yaml = require("js-yaml");
 
@@ -14,6 +14,12 @@ function App() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
   const [formData, setFormData] = React.useState({});
+  const [url, setUrl] = React.useState("");
+
+  useEffect(() => {
+    var data = new Blob([content]);
+    setUrl(URL.createObjectURL(data));
+  }, [content]);
 
   const showModal = () => {
     setIsOpen(true);
@@ -30,27 +36,21 @@ function App() {
   };
 
   const CustomSelect = function (props) {
-    
     return (
       <Select
-        id="input"
-        className="basic-single"
-        classNamePrefix="select"
         options={props.options.enumOptions}
         placeholder={props.label}
-        isSearchable={true}
         onChange={async (e) => {
           await props.onChange(e.value);
         }}
       ></Select>
     );
   };
-  
+
   const widgets = {
     SelectWidget: CustomSelect,
   };
 
- 
   fetch("schema.json", {
     headers: {
       "Content-Type": "application/json",
@@ -61,7 +61,12 @@ function App() {
     .then((schema) => {
       render(
         <>
-          <Form schema={schema} onSubmit={onSubmit} formData={formData} widgets={widgets}/>
+          <Form
+            schema={schema}
+            onSubmit={onSubmit}
+            formData={formData}
+            widgets={widgets}
+          />
         </>,
         document.getElementById("form")
       );
@@ -69,10 +74,12 @@ function App() {
   return (
     <>
       <Navbar>
-      <Nav>
-        <Navbar.Brand href="#home"><img src={logo} alt="logo" className="logo"></img></Navbar.Brand>
+        <Nav>
+          <Navbar.Brand href="#home">
+            <img src={logo} alt="logo" className="logo"></img>
+          </Navbar.Brand>
         </Nav>
-        <Nav className="mr-0" >
+        <Nav className="mr-0">
           <Nav.Link href="https://github.com/aparcar/devices/tree/main/form">
             Source Code
           </Nav.Link>
@@ -90,7 +97,17 @@ function App() {
           <pre>{content}</pre>
         </Modal.Body>
         <Modal.Footer>
-        <p className="button" onClick={hideModal}>Cancel</p> <p className="button" href="#" download="Data.yaml" type="text/yaml">Save</p>
+          <p className="button" onClick={hideModal}>
+            Cancel
+          </p>{" "}
+          <a
+            className="button"
+            href={url}
+            download="Data.yaml"
+            type="text/yaml"
+          >
+            Download Data
+          </a>
         </Modal.Footer>
       </Modal>
     </>

@@ -1,8 +1,8 @@
-a{
+a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 nav.navbar.navbar-expand {
@@ -17,36 +17,38 @@ nav.navbar.navbar-expand {
   right: 3.5rem;
   margin-top: 0.4rem;
 }
-.logo{
+.logo {
   height: 3.5rem;
 }
 
-.btn.btn-primary{
+.btn.btn-primary {
   background-color: #152c49;
 }
 
-
-.btn.btn-primary:focus{
-  box-shadow: none!important;
-  border:none;
+.btn.btn-primary:focus {
+  box-shadow: none !important;
+  border: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #0e2035;
 }
 
 button.btn.btn-primary {
   background-color: #152c49;
-  border:none;
+  border: none;
 }
 
-
-.form{
-  padding:2rem;
+.form {
+  padding: 2rem;
 }
 
-.button{
+.button {
   background-color: #152c49;
-  padding:0.5rem;
-  cursor:pointer;
+  padding: 0.5rem;
+  cursor: pointer;
   color: white;
-
   border-radius: 5px;
 }
 
@@ -54,3 +56,16 @@ button.btn.btn-primary {
   text-decoration: none;
   color: white;
 }
+
+button[type="submit"]:after {
+  background-color: #152c49;
+  margin-left: -3.2rem;
+  content: "Show Data";
+}
+
+button.download.btn.btn-primary {
+  position: relative;
+  margin-left: 10rem;
+  margin-top: -8rem;
+}
+

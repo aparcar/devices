@@ -111,24 +111,8 @@ properties:
   cpu:
     title: CPU
     type: object
-    required:
-      - model
-      - mhz
-      - cores
-    properties:
-        model:
-            title: Model
-            type: string
-        cores:
-            title: Number of Cores
-            type: number
-            multipleOf: 1.0
-            minimum: 1
-        mhz:
-            title: MHz
-            type: number
-            multipleOf: 1.0
-            minimum: 1
+    description: CPU description
+    $ref: file:cpu.yaml
 
   device_type:
     $ref: file:device-type.yaml
