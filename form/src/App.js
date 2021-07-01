@@ -68,9 +68,9 @@ function App() {
     });
   return (
     <>
-      <Navbar variant="dark">
+      <Navbar>
       <Nav>
-        <Navbar.Brand href="#home"><img src={logo} alt="logo"></img></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={logo} alt="logo" className="logo"></img></Navbar.Brand>
         </Nav>
         <Nav className="mr-0" >
           <Nav.Link href="https://github.com/aparcar/devices/tree/main/form">
