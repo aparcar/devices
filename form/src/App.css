@@ -20,7 +20,51 @@ nav.navbar.navbar-expand {
 .logo {
   height: 3.5rem;
 }
+nav.navbar.navbar-expand {
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 25%);
+  margin-bottom: 2rem;
+  padding: 0.5rem 3.5rem;
+}
 
+.mr-0.navbar-nav {
+  font-weight: bold;
+  position: absolute;
+  right: 3.5rem;
+  margin-top: 0.4rem;
+}
+.logo {
+  height: 3.5rem;
+}
+
+.btn.btn-primary {
+  background-color: #152c49;
+}
+
+.btn.btn-primary:focus {
+  box-shadow: none !important;
+  border: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #0e2035;
+}
+
+button.btn.btn-primary {
+  background-color: #152c49;
+  border: none;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.button {
+  background-color: #152c49;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+}
 .btn.btn-primary {
   background-color: #152c49;
 }

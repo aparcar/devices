@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { render } from "react-dom";
 import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
@@ -11,15 +11,31 @@ import "./App.css";
 const yaml = require("js-yaml");
 
 function App() {
+  //document.getElementById
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
-  const [formData, setFormData] = React.useState({});
+  const [formData, setFormData] = React.useState({ vendor: "" });
   const [url, setUrl] = React.useState("");
-
   useEffect(() => {
     var data = new Blob([content]);
     setUrl(URL.createObjectURL(data));
   }, [content]);
+
+  const CustomSelect = function (props) {
+    return (
+      <Select
+        options={props.options.enumOptions}
+        placeholder={props.label}
+        onChange={(e) => {
+          props.onChange(e.value);
+        }}
+      ></Select>
+    );
+  };
+
+  const widgets = {
+    SelectWidget: CustomSelect,
+  };
 
   const showModal = () => {
     setIsOpen(true);
@@ -33,22 +49,6 @@ function App() {
     setFormData(formData);
     setContent(yaml.safeDump(formData, { skipInvalid: true }));
     showModal();
-  };
-
-  const CustomSelect = function (props) {
-    return (
-      <Select
-        options={props.options.enumOptions}
-        placeholder={props.label}
-        onChange={async (e) => {
-          await props.onChange(e.value);
-        }}
-      ></Select>
-    );
-  };
-
-  const widgets = {
-    SelectWidget: CustomSelect,
   };
 
   fetch("schema.json", {
@@ -86,8 +86,10 @@ function App() {
           <Nav.Link href="schema_doc.html">Schema</Nav.Link>
         </Nav>
       </Navbar>
-      <div id="form" className="container form">
-        <p> Loading schemas...</p>
+      <div className="container">
+        <div className="form" id="form">
+          <p> Loading schemas...</p>
+        </div>
       </div>
       <Modal show={isOpen} onHide={hideModal}>
         <Modal.Header>
@@ -99,7 +101,7 @@ function App() {
         <Modal.Footer>
           <p className="button" onClick={hideModal}>
             Cancel
-          </p>{" "}
+          </p>
           <a
             className="button"
             href={url}
