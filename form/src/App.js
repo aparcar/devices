@@ -8,6 +8,7 @@ import logo from "./images/logo.png";
 import "./App.css";
 
 const yaml = require("js-yaml");
+const cpu_data = require("./cpus.json");
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -15,7 +16,7 @@ function App() {
   const [formData, setFormData] = React.useState({});
   const [url, setUrl] = React.useState("");
   const [filename, setFilename] = React.useState("");
-
+  const [cpu, setCpu] = React.useState({});
   useEffect(() => {
     var data = new Blob([content]);
     setUrl(URL.createObjectURL(data));
@@ -35,6 +36,10 @@ function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [content]);
+  useEffect(() => {
+    setFormData({ ...formData, cpu });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cpu]);
 
   const showModal = () => {
     setIsOpen(true);
@@ -60,7 +65,21 @@ function App() {
     .then((schema) => {
       render(
         <>
-          <Form schema={schema} onSubmit={onSubmit} formData={formData} />
+          <Form
+            schema={schema}
+            onSubmit={onSubmit}
+            formData={formData}
+            onChange={async (e) => {
+              setFormData(e.formData);
+              if (e.formData.cpu.model) {
+                setCpu({
+                  model: e.formData.cpu.model,
+                  cores: cpu_data[e.formData.cpu.model].cores,
+                  mhz: cpu_data[e.formData.cpu.model].mhz,
+                });
+              }
+            }}
+          />
         </>,
         document.getElementById("form")
       );
