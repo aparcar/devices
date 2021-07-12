@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { render } from "react-dom";
 import Form from "@rjsf/bootstrap-4";
 import Modal from "react-bootstrap/Modal";
@@ -13,6 +13,28 @@ function App() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [content, setContent] = React.useState("Transitioning...");
   const [formData, setFormData] = React.useState({});
+  const [url, setUrl] = React.useState("");
+  const [filename, setFilename] = React.useState("");
+
+  useEffect(() => {
+    var data = new Blob([content]);
+    setUrl(URL.createObjectURL(data));
+    var { vendor, model, variant } = formData;
+    if (
+      (vendor !== undefined && model !== undefined) ||
+      variant !== undefined
+    ) {
+      var name = vendor.toLowerCase() + "_" + model.toLowerCase();
+      if (variant !== undefined) {
+        name = name + "-" + variant;
+      }
+      name = name + ".yaml";
+      name = name.replace(" ", "-");
+      name = name.replace(/[\u{0080}-\u{FFFF}]/gu, "");
+      setFilename(name);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [content]);
 
   const showModal = () => {
     setIsOpen(true);
@@ -71,10 +93,10 @@ function App() {
         <Modal.Footer>
           <p className="button" onClick={hideModal}>
             Cancel
-          </p>
-          <p className="button" href="#" download="Data.yaml" type="text/yaml">
+          </p>{" "}
+          <a href={url} className="button" download={filename} type="text/yaml">
             Save
-          </p>
+          </a>
         </Modal.Footer>
       </Modal>
     </>
