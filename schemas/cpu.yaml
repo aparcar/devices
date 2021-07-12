@@ -1,0 +1,245 @@
+$id: https://openwrt.org/schema/cpu.yaml
+
+properties:
+  model:
+    title: Model
+    type: string
+    enum:
+      - Qualcomm Atheros QCA9563
+      - Broadcom BCM5358
+      - Atheros AR9331
+      - MediaTek MT7621AT
+      - Qualcomm IPQ8064
+      - Lantiq XWAY VRX220
+      - Qualcomm Atheros IPQ8064
+      - Broadcom BCM63168
+      - Broadcom BCM4708
+      - Allwinner A64
+      - AppliedMicro APM82181
+      - Qualcomm Atheros QCA9533
+      - Atheros AR7161
+      - Lantiq Danube
+      - Allwinner A20
+      - MediaTek MT7623A
+      - Cavium CN6120
+      - Marvell 88F5180NB1
+      - Ralink RT3050F
+      - Lantiq XWAY Danube PSB 50702
+      - Lantiq AMAZON-ME
+      - Qualcomm Atheros QCA9531
+      - Atheros AR9344
+      - Ralink RT5350
+      - Broadcom BCM6361
+      - Atheros AR7240
+      - Marvell Armada 385 88F6820
+      - Broadcom BCM4704KFBG
+      - Broadcom BCM6348
+      - Atheros AR7242
+      - Lantiq XWAY VRX288
+      - Ralink RT3052F
+      - Qualcomm IPQ4019
+      - Broadcom BCM6368
+      - Atmel AT32AP7000
+      - Allwinner H3
+      - Qualcomm Atheros IPQ4028
+      - Ralink RT3052
+      - MediaTek MT7620A
+      - MIPS interAptiv cXT200
+      - MediaTek MT7628AN
+      - MediaTek MT7621A
+      - Ralink RT2880F
+      - MediaTek MT7628A
+      - Ralink RT3050
+      - Marvell 88F6282
+      - Broadcom BCM4718
+      - Qualcomm Atheros TP9343
+      - MediaTek MT7620N
+      - Lantiq AMAZON-SE
+      - Broadcom BCM5357
+      - MediaTek MT7628NN
+      - Allwinner H2+
+      - Broadcom BCM6328
+      - MediaTek MT7688AN
+      - Atheros AR9341
+      - Ralink RT5350F
+      - Broadcom BCM47186B0
+      - Broadcom BCM6369
+      - Qualcomm Atheros IPQ4018
+      - Broadcom BCM4704
+      - Broadcom BCM63281
+      - Intel Atom E3825
+      - MediaTek MT7620A + Ralink RT63368
+      - Lantiq XWAY VRX288 / PSB 80920 EL
+      - Broadcom BCM6358
+      - Broadcom BCM3380
+      - Qualcomm Atheros QCA9558
+      - Cavium CN8020
+      - Qualcomm Atheros QCA9561
+      - Broadcom BCM63268
+      - Qualcomm Atheros IPQ8065
+      - Marvell Armada 3700LP 88F3720
+      - Broadcom BCM63167
+      - Broadcom BCM4709A0
+      - Broadcom BCM4785
+      - Lantiq XWAY ARX188
+      - Allwinner H5
+      - Broadcom BCM6362
+      - Lantiq XWAY Danube
+      - Atheros AR9132
+      - Cavium CN7020 AAP 1.2
+      - NXP LS1088A
+      - Marvell 88F6560
+      - Ralink RT3883
+      - Broadcom BCM6318
+      - Intel IXP425
+      - Infineon ADM5120
+      - Lantiq Danube PSB 50712
+      - Broadcom BCM4716
+      - Atheros AR2313A
+      - Lantiq PSB50812
+      - Lantiq XWAY ARX168
+      - Ralink RT3352F
+      - MediaTek MT7621ST
+      - Intel IXP420
+      - Broadcom BCM5354 rev. 3
+      - IDT 79RC32H435
+      - Atheros AR9341 rev 1
+      - Texas Instruments AM335x
+      - Atheros AR9132 rev 2
+      - Broadcom BCM4709
+      - Broadcom BCM5357B0
+      - Qualcomm Atheros QCA9531-BL3A
+      - Broadcom BCM4704KPBG
+      - Atheros AR1311
+      - Broadcom BCM4708A0
+      - Atheros AR9342
+      - Broadcom BCM4709C0
+      - Broadcom BCM5352E
+      - Broadcom BCM3382
+      - Marvell 88F5181L
+      - Atheros AR2315
+      - NXP P1020
+      - PLX NAS7820
+      - Broadcom BCM4706
+      - Broadcom BCM6358U
+      - Atheros AR2317
+      - Broadcom BCM5365
+      - Qualcomm Atheros QCA9556
+      - Ralink RT2880
+      - Atheros AR7130
+      - Lantiq XRX200
+      - Marvell 88F6281
+      - Lantiq XWAY VRX288 v1.1
+      - Texas Instruments TNETD7200ZDW
+      - Intel IXP422
+      - Broadcom BCM5750
+      - Freescale i.MX233
+      - Qualcomm Atheros QCA9553
+      - Broadcom BCM5350
+      - AMD GX-412TC
+      - Broadcom BCM53016A1
+      - Broadcom BCM5357C0
+      - Atheros AR7240 rev 2
+      - Ralink RT3662F
+      - Texas Instruments TNETD7300
+      - Cortina Systems QWCS3512C A3
+      - Atheros AR5312
+      - MediaTek MT7621
+      - Allwinner A10
+      - Allwinner H2
+      - Storm SL3516
+      - Qualcomm IPQ4019/29
+      - Atheros AR9342 rev 2
+      - Broadcom BCM5354
+      - Broadcom BCM47186
+      - Lantiq XWAY VRX268
+      - Atheros AR1321 (detects as AR9341 rev 1)
+      - Ralink RT3352
+      - Marvell 88F5181
+      - Qualcomm Atheros QCA9557
+      - Atheros AR7241
+      - Texas Instruments OMAP3530
+      - ARM9
+      - Qualcomm Atheros QCA9533-AL3A
+      - Broadcom BCM5352
+      - Atheros AR7370
+      - Ralink RT3052 v2
+      - Broadcom BCM4717
+      - Broadcom BCM6359
+      - Intel IXP422BB
+      - Broadcom BCM4705
+      - Allwinner A13
+      - MediaTek MT7621S
+      - Atheros AR2313
+      - AMD Geode GX1
+      - Ralink RT3052_MP2
+      - Broadcom BCM53572
+      - MediaTek MT7628N
+      - Cavium CN5020
+      - Qualcomm IPQ4029
+      - Ralink RT6856
+      - Qualcomm Atheros IPQ4029
+      - Infineon PSB50505
+      - Rockchip RK3399
+      - Storm SL3512
+      - AMD Geode SC1100
+      - Alchemy 1500
+      - Broadcom BCM47081A0
+      - Broadcom BCM5356
+      - Lantiq PSB 50800
+      - Texas Instruments AR7
+      - Atheros AR9130
+      - AMD T40E
+      - Qualcomm Atheros QCA9550
+      - Broadcom BCM47081
+      - Atheros AR1022
+      - MediaTek MT7623N
+      - Atheros AR9330 rev 1
+      - Broadcom BCM4710
+      - Star STR8132
+      - Broadcom BCM63168, Broadcom BCM4709
+      - Broadcom BCM4718A1
+      - Ralink RT3662
+      - Marvell 88F6192
+      - Intel IXP425/IXP422
+      - Freescale P1020E
+      - Lantiq XWAY VRX288 PSB 80920
+      - Freescale i.MX283
+      - Broadcom BCM63169
+      - Texas Instruments TNETD7200
+      - Qualcomm Atheros AR9331
+      - MediaTek MT7628
+      - Qualcomm Atheros QCA956X
+      - Ralink RT305x
+      - Atheros AR9344 rev 2
+      - Atheros AR7161 rev 2
+      - Atheros AR9350
+      - Atheros AR2315A
+      - Atheros AR9342-BL1A
+      - Qualcomm Atheros QCA9563-AL3A
+      - Broadcom BCM5836
+      - Broadcom BCM4702
+      - Texas Instruments TNETV1060
+      - AMD Geode LX800
+      - Marvell Armada 380
+      - Broadcom BCM4780
+      - Rockchip RK3328
+      - Marvell 98dx4122
+      - Atmel ATSAMA5D35
+      - Marvell Armada 8040
+      - Freescale P2020
+      - Ralink RT3052_MP1
+      - Broadcom BCM2837A0
+      - Marvell Armada 370
+
+  cores:
+    title: Number of Cores
+    type: number
+    multipleOf: 1.0
+    minimum: 1
+
+  mhz:
+    title: MHz
+    type: number
+    multipleOf: 1.0
+    minimum: 1
