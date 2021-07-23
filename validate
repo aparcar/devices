@@ -47,27 +47,25 @@ for schema in schema_path.glob("*.yaml"):
     store[f"file:{schema.name}"] = yaml.safe_load(schema.read_text())
 
 if argv[1] == "merge-to-json":
-    device = yaml.safe_load((schema_path / "device.yaml").read_text())
-
-    replace_ref(device["properties"])
-    Path("form/public/schema.json").write_text(json.dumps(device))
-
     cpus = {}
+    wifis = {}
     for device_path in Path("./data/").glob("*.yaml"):
         device_data = yaml.safe_load(device_path.read_text())
         cpu_model = device_data["cpu"].pop("model")
         if cpu_model not in cpus:
             cpus[cpu_model] = device_data["cpu"]
-    Path("form/public/cpus.json").write_text(json.dumps(cpus))
-
-    wifis = {}
-    for device_path in Path("./data/").glob("*.yaml"):
-        device_data = yaml.safe_load(device_path.read_text())
         for wifi_entry in device_data.get("wifi", []):
             wifi_model = wifi_entry.pop("model")
             if wifi_model not in wifis:
                 wifis[wifi_model] = wifi_entry
+    Path("form/public/cpus.json").write_text(json.dumps(cpus))
     Path("form/public/wifis.json").write_text(json.dumps(wifis))
+
+    device = yaml.safe_load((schema_path / "device.yaml").read_text())
+    replace_ref(device["properties"])
+    device["properties"]["cpu"]["properties"]["model"]["enum"] = list(cpus.keys())
+    Path("form/public/schema.json").write_text(json.dumps(device))
+
 
 else:
     instance_files = []
